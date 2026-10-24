@@ -127,6 +127,11 @@ dd{margin:4px 0 0;color:var(--ink-2)}
 .form input:focus,.form select:focus,.form textarea:focus{outline:2px solid var(--lav);border-color:var(--pine)}
 .form .btn{margin-top:22px;border:0;cursor:pointer;font:inherit}
 .form .note{font-size:.85rem;color:var(--ink-2);margin-top:12px}
+.thanks{display:grid;gap:28px;grid-template-columns:auto 1fr;align-items:center;background:#fff;border:1px solid var(--rule);border-left:5px solid var(--gold);border-radius:16px;padding:28px}
+.thanks img{width:150px;height:150px;object-fit:contain}
+@media(max-width:600px){.thanks{grid-template-columns:1fr;text-align:center}.thanks img{margin:0 auto}}
+.thanks h3{margin:0 0 6px;font-size:1.35rem}
+.thanks p{margin:0 0 10px}
 footer{padding:48px 0 60px;border-top:1px solid var(--rule);color:var(--ink-2);font-size:.9rem}
 footer .wrap{display:grid;gap:24px;grid-template-columns:1.2fr 1fr 1fr}
 @media(max-width:720px){footer .wrap{grid-template-columns:1fr}}
@@ -249,6 +254,21 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
   </div>
 </section>
 
+<section id="thanks" style="padding-top:0;border:0">
+  <div class="wrap">
+    <div class="eyebrow">Thank you</div>
+    <h2>Our first sponsor.</h2>
+    <div class="thanks">
+      <a href="https://www.midtownyachtclub.com/" target="_blank" rel="noopener"><img src="midtown-yacht-club.png" alt="Midtown Yacht Club logo"></a>
+      <div>
+        <h3>Midtown Yacht Club</h3>
+        <p>Midtown Yacht Club has been raising money for Silver Rail families and kids since the first days, and is sponsoring our very first activity: a field trip for Silver Rail kids to the pumpkin patch. The first thing this fund does for our children happens because of them.</p>
+        <p><a href="https://www.midtownyachtclub.com/" target="_blank" rel="noopener">midtownyachtclub.com</a> — go say thank you with a beer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="sponsor">
   <div class="wrap">
     <div class="eyebrow">For local businesses</div>
@@ -306,7 +326,7 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
         <ul>
           <li>Oct 22 — Silver Rail Kids Fun Fund launched on GoFundMe</li>
           <li>Oct 23 — Silver Rail Children's Fund incorporated in Oregon; EIN issued</li>
-          <li>Next — first support paid for; bank account and DOJ registration</li>
+          <li>Next — pumpkin patch field trip for Silver Rail kids, sponsored by Midtown Yacht Club; bank account and DOJ registration</li>
         </ul>
         <small>Updated as things happen. The first monthly ledger posts after our first full month.</small>
       </div>
