@@ -163,6 +163,10 @@ dd{margin:4px 0 0;color:var(--ink-2)}
 .community-head{display:grid;gap:36px;grid-template-columns:auto 1fr;align-items:center}
 .community-head img{width:200px;height:200px;object-fit:cover;border-radius:50%;box-shadow:0 10px 30px rgba(91,63,147,.18)}
 @media(max-width:600px){.community-head{grid-template-columns:1fr;text-align:center}.community-head img{margin:0 auto}}
+.bar{background:var(--gold);color:var(--ink);font-weight:600;font-size:.95rem;text-align:center;padding:10px 16px}
+.bar a{color:var(--ink);text-decoration:none;border-bottom:1.5px solid rgba(31,42,43,.35)}
+.bar a:hover{border-color:var(--ink)}
+@media(max-width:720px){header nav .btn{display:none}header.open nav a.btn{display:inline-block}.barx{display:none}.bar{font-size:1rem;padding:11px 16px}}
 footer{padding:48px 0 60px;border-top:1px solid var(--rule);color:var(--ink-2);font-size:.9rem}
 footer .wrap{display:grid;gap:24px;grid-template-columns:1.2fr 1fr 1fr}
 @media(max-width:720px){footer .wrap{grid-template-columns:1fr}}
@@ -204,6 +208,7 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
     </nav>
   </div>
 </header>
+<div class="bar"><a href="https://www.gofundme.com/f/silver-rail-kids-fun-fund-nve6k" target="_blank" rel="noopener">Give to the Kids Fun Fund &rarr;</a><span class="barx"> &nbsp;&middot;&nbsp; 100% to the kids</span></div>
 
 <main id="top">
 
