@@ -52,7 +52,18 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 nav a{margin-left:22px;text-decoration:none;color:var(--ink-2);font-weight:500;font-size:.95rem}
 nav a:hover{color:var(--pine)}
 nav .btn{padding:9px 16px;font-size:.9rem;color:#fff;margin-left:26px}
-@media(max-width:720px){nav a:not(.btn){display:none}}
+.menubtn{display:none;width:42px;height:42px;border:1px solid var(--rule);border-radius:10px;background:#fff;cursor:pointer;margin-left:12px;padding:0;align-items:center;justify-content:center}
+.menubtn span{display:block;width:18px;height:2px;background:var(--pine);position:relative}
+.menubtn span::before,.menubtn span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--pine)}
+.menubtn span::before{top:-6px}.menubtn span::after{top:6px}
+@media(max-width:720px){
+  nav a:not(.btn){display:none}
+  .menubtn{display:flex}
+  header.open nav a:not(.btn){display:block}
+  header.open nav{position:absolute;left:0;right:0;top:68px;background:var(--paper);border-bottom:1px solid var(--rule);padding:8px 20px 16px;box-shadow:0 12px 30px rgba(31,42,43,.12)}
+  header.open nav a{margin:0;padding:12px 4px;font-size:1.05rem;border-bottom:1px solid var(--rule)}
+  header.open nav a.btn{display:inline-block;margin-top:14px;border:0;color:#fff;padding:11px 18px}
+}
 
 .hero{padding:88px 0 72px;background:
   radial-gradient(900px 400px at 85% -10%,rgba(184,169,221,.45),transparent 60%),
@@ -167,12 +178,13 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
 </head>
 <body>
 
-<header>
+<header data-closemenu>
   <div class="wrap">
     <a class="brand" href="#top">
       <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#5B3F93"/><path d="M50 78 C30 62 20 52 20 40 a15 15 0 0 1 30 -6 a15 15 0 0 1 30 6 c0 12 -10 22 -30 38z" fill="#f3c77b"/></svg>
       Silver Rail Children's Fund
     </a>
+    <button class="menubtn" aria-label="Menu" onclick="document.querySelector('header').classList.toggle('open')"><span></span></button>
     <nav>
       <a href="#why">Why</a>
       <a href="#how">How it works</a>
@@ -469,5 +481,6 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
   </div>
 </footer>
 
+<script>document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>document.querySelector("header").classList.remove("open")));</script>
 </body>
 </html>
