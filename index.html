@@ -119,8 +119,14 @@ dd{margin:4px 0 0;color:var(--ink-2)}
 .photos figcaption{position:absolute;left:0;right:0;bottom:0;padding:8px 12px;font-size:.72rem;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.55))}
 .photos figcaption a{color:#fff}
 @media(max-width:720px){.photos{grid-template-columns:1fr}.photos .tall{grid-row:auto}.photos .tall img{aspect-ratio:3/2}}
-.ig{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:28px}
-.ig blockquote{margin:0!important;min-width:0!important;max-width:100%!important}
+.igwrap{position:relative;margin-top:28px}
+.ig{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 4px 16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.ig::-webkit-scrollbar{display:none}
+.ig blockquote{flex:0 0 328px;scroll-snap-align:start;margin:0!important;min-width:328px!important;max-width:328px!important}
+.ig .instagram-media-rendered{flex:0 0 328px}
+.igbtn{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:1px solid var(--rule);background:#fff;color:var(--pine);font-size:22px;line-height:42px;text-align:center;cursor:pointer;box-shadow:0 6px 18px rgba(31,42,43,.12);z-index:2;user-select:none}
+.igbtn.prev{left:-22px}.igbtn.next{right:-22px}
+@media(max-width:820px){.igbtn{display:none}.ig blockquote{flex-basis:84vw;min-width:84vw!important;max-width:84vw!important}}
 .form{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:28px;max-width:640px}
 .form label{display:block;font-weight:600;font-size:.9rem;margin:16px 0 6px}
 .form input,.form select,.form textarea{width:100%;font:inherit;padding:12px 14px;border:1px solid var(--rule);border-radius:10px;background:var(--paper);color:var(--ink)}
@@ -352,7 +358,10 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
         <p style="max-width:640px;margin:0">Posts from people who have shown up for Silver Rail. Use <strong>#silverrailchildrensfund</strong> so we can find and share yours.</p>
       </div>
     </div>
-    <div class="ig">
+    <div class="igwrap">
+    <div class="igbtn prev" onclick="document.getElementById('igrow').scrollBy({left:-700,behavior:'smooth'})" aria-label="Previous">&#8249;</div>
+    <div class="igbtn next" onclick="document.getElementById('igrow').scrollBy({left:700,behavior:'smooth'})" aria-label="Next">&#8250;</div>
+    <div class="ig" id="igrow">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Deu2reoAe39/" data-instgrm-version="14" style="background:#fff;border:1px solid var(--rule);border-radius:16px;margin:0;padding:0;width:100%"><a href="https://www.instagram.com/p/Deu2reoAe39/" target="_blank" rel="noopener" style="display:block;padding:24px;color:var(--pine)">View this post on Instagram</a></blockquote>
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Dekte6vvq0r/" data-instgrm-version="14" style="background:#fff;border:1px solid var(--rule);border-radius:16px;margin:0;padding:0;width:100%"><a href="https://www.instagram.com/p/Dekte6vvq0r/" target="_blank" rel="noopener" style="display:block;padding:24px;color:var(--pine)">View this post on Instagram</a></blockquote>
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DeyWbU6Ixxj/" data-instgrm-version="14" style="background:#fff;border:1px solid var(--rule);border-radius:16px;margin:0;padding:0;width:100%"><a href="https://www.instagram.com/p/DeyWbU6Ixxj/" target="_blank" rel="noopener" style="display:block;padding:24px;color:var(--pine)">View this post on Instagram</a></blockquote>
@@ -364,6 +373,7 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DesUHSgmaX_/" data-instgrm-version="14" style="background:#fff;border:1px solid var(--rule);border-radius:16px;margin:0;padding:0;width:100%"><a href="https://www.instagram.com/p/DesUHSgmaX_/" target="_blank" rel="noopener" style="display:block;padding:24px;color:var(--pine)">View this post on Instagram</a></blockquote>
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DemiHbphcx-/" data-instgrm-version="14" style="background:#fff;border:1px solid var(--rule);border-radius:16px;margin:0;padding:0;width:100%"><a href="https://www.instagram.com/p/DemiHbphcx-/" target="_blank" rel="noopener" style="display:block;padding:24px;color:var(--pine)">View this post on Instagram</a></blockquote>
       <!-- To add another post: copy a blockquote above and change both URLs to the new post link. -->
+    </div>
     </div>
     <p style="margin-top:20px"><a class="btn ghost" href="https://www.instagram.com/explore/tags/silverrailchildrensfund/" target="_blank" rel="noopener">See #silverrailchildrensfund</a> &nbsp; <a class="btn" href="kaylub.html">Parent messages to Kaylub →</a></p>
   </div>
