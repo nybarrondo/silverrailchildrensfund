@@ -172,6 +172,7 @@ footer .wrap{display:grid;gap:24px;grid-template-columns:1.2fr 1fr 1fr}
 @media(max-width:720px){footer .wrap{grid-template-columns:1fr}}
 footer a{color:var(--ink-2)}
 small.legal{display:block;margin-top:18px;line-height:1.5}
+footer .taxid{max-width:1100px;margin:28px auto 0;padding:0 20px;font-size:1rem;color:var(--ink)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -477,7 +478,7 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
       <strong style="color:var(--ink)">Silver Rail Children's Fund</strong><br>
       Bend, Oregon<br>
       <a href="mailto:hello@silverrailchildrensfund.org">hello@silverrailchildrensfund.org</a>
-      <small class="legal">Silver Rail Children's Fund is an Oregon public benefit nonprofit corporation. Oregon Registry No. 264524597 · Tax ID 43-2607169. Application for recognition of exemption under Section 501(c)(3) is pending. Once granted, exemption is retroactive to our incorporation date, and contributions made in the meantime become tax-deductible; we will provide receipts to every donor.</small>
+      <small class="legal">Silver Rail Children's Fund is an Oregon public benefit nonprofit corporation. Oregon Registry No. 264524597. Application for recognition of exemption under Section 501(c)(3) is pending. Once granted, exemption is retroactive to our incorporation date, and contributions made in the meantime become tax-deductible; we will provide receipts to every donor.</small>
     </div>
     <div>
       <strong style="color:var(--ink)">Give</strong><br>
@@ -491,6 +492,7 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
       <a href="#contact">Foundations &amp; partnerships</a>
     </div>
   </div>
+  <p class="taxid"><strong>Tax ID 43-2607169</strong></p>
 </footer>
 
 <script>document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>document.querySelector("header").classList.remove("open")));</script>
