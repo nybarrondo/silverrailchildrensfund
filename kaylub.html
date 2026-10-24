@@ -81,7 +81,18 @@ footer{padding:40px 0 60px;border-top:1px solid var(--rule);color:var(--ink-2);f
 <section id="messages">
   <div class="wrap">
     <h2>What parents are saying.</h2>
-    <div id="msgs" class="grid"><p class="empty">Loading messages…</p></div>
+    <div class="grid" id="pinned">
+      <div class="msg" style="grid-column:1/-1;max-width:760px">
+        <p>Dear Kaylub,</p>
+        <p>I am writing this to thank you from the absolute bottom of my heart.</p>
+        <p>My daughter was out of her classroom for Walk to Read that morning when everything happened. She had nowhere to hide and no door to close. I cannot even bring myself to process what could have happened if you weren't right there.</p>
+        <p>Because of your incredible courage, swift action, and bravery, countless lives were saved — including my daughter's. You gave her back to us, and there are truly no words that can ever fully measure our gratitude to you.</p>
+        <p>We will forever hold you in our hearts, and we are praying for your continued strength and healing. Thank you for being her hero that day.</p>
+        <p>With endless gratitude,</p>
+        <div class="who"><b>Nicole Guerin-Ybarrondo</b> · mom of 1st and 4th graders</div>
+      </div>
+    </div>
+    <div id="msgs" class="grid" style="margin-top:22px"></div>
   </div>
 </section>
 
@@ -108,7 +119,7 @@ footer{padding:40px 0 60px;border-top:1px solid var(--rule);color:var(--ink-2);f
 (async function(){
   const SHEET_CSV = "GOOGLE_SHEET_CSV_URL";
   const box = document.getElementById('msgs');
-  if (SHEET_CSV.startsWith('GOOGLE')) { box.innerHTML = '<p class="empty">Messages will appear here soon.</p>'; return; }
+  if (SHEET_CSV.startsWith('GOOGLE')) { box.innerHTML = ''; return; }
   try {
     const r = await fetch(SHEET_CSV + (SHEET_CSV.includes('?') ? '&' : '?') + 't=' + Date.now(), {cache:'no-store'});
     const text = await r.text();
@@ -119,13 +130,13 @@ footer{padding:40px 0 60px;border-top:1px solid var(--rule);color:var(--ink-2);f
     const iConn = head.findIndex(h => h.includes('connection'));
     const iOk   = head.findIndex(h => h.includes('approved'));
     const ok = rows.filter(r => iOk >= 0 && /^(yes|y|true|x)$/i.test((r[iOk]||'').trim()) && (r[iMsg]||'').trim());
-    if (!ok.length) { box.innerHTML = '<p class="empty">Messages will appear here soon.</p>'; return; }
+    if (!ok.length) { box.innerHTML = ''; return; }
     box.innerHTML = ok.reverse().map(r => {
       const name = esc((r[iName]||'A Silver Rail parent').trim());
       const conn = iConn >= 0 ? esc((r[iConn]||'').trim()) : '';
       return `<div class="msg"><p>${esc(r[iMsg].trim()).replace(/\n/g,'<br>')}</p><div class="who"><b>${name}</b>${conn ? ' · ' + conn : ''}</div></div>`;
     }).join('');
-  } catch(e) { box.innerHTML = '<p class="empty">Messages will appear here soon.</p>'; }
+  } catch(e) { box.innerHTML = ''; }
 
   function esc(s){ return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
   function parseCSV(str){
