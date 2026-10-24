@@ -47,16 +47,17 @@ a{color:var(--pine)}
 
 header{position:sticky;top:0;z-index:10;background:rgba(251,248,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:Fraunces,serif;font-weight:700;font-size:1.1rem}
+.brand{display:flex;align-items:center;gap:10px;white-space:nowrap;text-decoration:none;color:var(--ink);font-family:Fraunces,serif;font-weight:700;font-size:1.1rem}
 .brand svg{width:30px;height:30px}
-nav a{margin-left:22px;text-decoration:none;color:var(--ink-2);font-weight:500;font-size:.95rem}
+nav{display:flex;align-items:center;flex-wrap:nowrap}
+nav a{margin-left:16px;text-decoration:none;color:var(--ink-2);font-weight:500;font-size:.9rem;white-space:nowrap}
 nav a:hover{color:var(--pine)}
-nav .btn{padding:9px 16px;font-size:.9rem;color:#fff;margin-left:26px}
+nav .btn{padding:9px 16px;font-size:.9rem;color:#fff;margin-left:18px}
 .menubtn{display:none;width:42px;height:42px;border:1px solid var(--rule);border-radius:10px;background:#fff;cursor:pointer;margin-left:12px;padding:0;align-items:center;justify-content:center}
 .menubtn span{display:block;width:18px;height:2px;background:var(--pine);position:relative}
 .menubtn span::before,.menubtn span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--pine)}
 .menubtn span::before{top:-6px}.menubtn span::after{top:6px}
-@media(max-width:720px){
+@media(max-width:1060px){
   header .wrap{height:60px;gap:8px}
   .brand{font-size:.98rem;white-space:nowrap;gap:8px;min-width:0}
   .brand svg{width:26px;height:26px;flex:none}
@@ -166,7 +167,7 @@ dd{margin:4px 0 0;color:var(--ink-2)}
 .bar{background:var(--gold);color:var(--ink);font-weight:600;font-size:.95rem;text-align:center;padding:10px 16px}
 .bar a{color:var(--ink);text-decoration:none;border-bottom:1.5px solid rgba(31,42,43,.35)}
 .bar a:hover{border-color:var(--ink)}
-@media(max-width:720px){header nav .btn{display:none}header.open nav a.btn{display:inline-block}.barx{display:none}.bar{font-size:1rem;padding:11px 16px}}
+@media(max-width:1060px){header nav .btn{display:none}header.open nav a.btn{display:inline-block}.barx{display:none}.bar{font-size:1rem;padding:11px 16px}}
 footer{padding:48px 0 60px;border-top:1px solid var(--rule);color:var(--ink-2);font-size:.9rem}
 footer .wrap{display:grid;gap:24px;grid-template-columns:1.2fr 1fr 1fr}
 @media(max-width:720px){footer .wrap{grid-template-columns:1fr}}
@@ -198,11 +199,11 @@ footer .taxid{max-width:1100px;margin:28px auto 0;padding:0 20px;font-size:1rem;
     </a>
     <button class="menubtn" aria-label="Menu" onclick="document.querySelector('header').classList.toggle('open')"><span></span></button>
     <nav>
-      <a href="#why">Why</a>
       <a href="#how">How it works</a>
       <a href="#sponsor">Businesses</a>
       <a href="#transparency">Transparency</a>
       <a href="#faq">FAQ</a>
+      <a href="parents.html">For parents</a>
       <a href="kaylub.html">Messages for Kaylub</a>
       <a href="#contact">Contact</a>
       <a class="btn" href="https://www.gofundme.com/f/silver-rail-kids-fun-fund-nve6k" target="_blank" rel="noopener">Give</a>
@@ -431,7 +432,7 @@ footer .taxid{max-width:1100px;margin:28px auto 0;padding:0 20px;font-size:1rem;
       <dt>I own a business in Bend. How do I take part?</dt>
       <dd><a href="sponsor-sign.pdf">Print the sign</a>, put it in your window or at the register, and <a href="#contact">tell us</a>. Customers add a few dollars at checkout; we pay you for what Silver Rail kids use. You're paid by default. If you'd rather donate or discount, we'll take you up on it gratefully — but it's never expected.</dd>
       <dt>I'm a Silver Rail parent. How do I ask for support?</dt>
-      <dd>Use the <a href="#contact">form below</a> to register your child, then tell us what would help them — a class, a pass, a trip, counseling. We'll confirm enrollment once, privately, and never ask again.</dd>
+      <dd><a href="parents.html">Register your child</a> on the For Parents page, then tell us what would help them — a class, a pass, a trip, counseling. We'll confirm enrollment once, privately, and never ask again. That page also spells out exactly what we promise and what we keep.</dd>
     </dl>
   </div>
 </section>
@@ -484,6 +485,7 @@ footer .taxid{max-width:1100px;margin:28px auto 0;padding:0 20px;font-size:1rem;
       <strong style="color:var(--ink)">Give</strong><br>
       <a href="https://www.gofundme.com/f/silver-rail-kids-fun-fund-nve6k" target="_blank" rel="noopener">Kids Fun Fund on GoFundMe</a><br>
       <a href="#sponsor">Sponsor a Silver Rail kid</a><br>
+      <a href="parents.html">For parents</a><br>
       <a href="kaylub.html">Messages for Kaylub</a>
     </div>
     <div>
