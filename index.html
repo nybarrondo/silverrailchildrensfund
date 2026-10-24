@@ -118,6 +118,13 @@ dd{margin:4px 0 0;color:var(--ink-2)}
 @media(max-width:720px){.photos{grid-template-columns:1fr}.photos .tall{grid-row:auto}.photos .tall img{aspect-ratio:3/2}}
 .ig{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:28px}
 .ig blockquote{margin:0!important;min-width:0!important;max-width:100%!important}
+.form{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:28px;max-width:640px}
+.form label{display:block;font-weight:600;font-size:.9rem;margin:16px 0 6px}
+.form input,.form select,.form textarea{width:100%;font:inherit;padding:12px 14px;border:1px solid var(--rule);border-radius:10px;background:var(--paper);color:var(--ink)}
+.form textarea{min-height:120px;resize:vertical}
+.form input:focus,.form select:focus,.form textarea:focus{outline:2px solid var(--lav);border-color:var(--pine)}
+.form .btn{margin-top:22px;border:0;cursor:pointer;font:inherit}
+.form .note{font-size:.85rem;color:var(--ink-2);margin-top:12px}
 footer{padding:48px 0 60px;border-top:1px solid var(--rule);color:var(--ink-2);font-size:.9rem}
 footer .wrap{display:grid;gap:24px;grid-template-columns:1.2fr 1fr 1fr}
 @media(max-width:720px){footer .wrap{grid-template-columns:1fr}}
@@ -138,6 +145,7 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
       <a href="#how">How it works</a>
       <a href="#sponsor">Businesses</a>
       <a href="#transparency">Transparency</a>
+      <a href="#contact">Contact</a>
       <a class="btn" href="https://www.gofundme.com/f/silver-rail-kids-fun-fund-nve6k" target="_blank" rel="noopener">Give</a>
     </nav>
   </div>
@@ -243,7 +251,7 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
       <div>
         <h3>A sign for your window, a line on your receipt.</h3>
         <p>Partner businesses get a printed window badge, a register card, and a thank-you on this site. Your customers see where their few dollars went. We handle everything else.</p>
-        <a class="btn" href="mailto:hello@silverrailchildrensfund.org?subject=Sponsor%20a%20Silver%20Rail%20kid">Become a sponsor business</a>
+        <a class="btn" href="#contact">Become a sponsor business</a>
       </div>
     </div>
   </div>
@@ -318,6 +326,40 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
   </div>
 </section>
 
+<section id="contact">
+  <div class="wrap two">
+    <div>
+      <div class="eyebrow">Get in touch</div>
+      <h2>Tell us what you need. Or what you can give.</h2>
+      <p>Parents: tell us what would help your child. Businesses: tell us how you'd like to be part of this. Press and foundations: we'll answer quickly.</p>
+      <p>Nothing you write here is shared, and no child's name goes anywhere without your say-so.</p>
+    </div>
+    <form class="form" action="https://formspree.io/f/FORMSPREE_ID" method="POST">
+      <input type="hidden" name="_subject" value="Silver Rail Children's Fund — website message">
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <label for="f-who">I am a</label>
+      <select id="f-who" name="who" required>
+        <option value="">Choose one</option>
+        <option>Silver Rail parent or guardian</option>
+        <option>Local business</option>
+        <option>Donor or foundation</option>
+        <option>Press</option>
+        <option>Other</option>
+      </select>
+      <label for="f-name">Name</label>
+      <input id="f-name" type="text" name="name" required autocomplete="name">
+      <label for="f-email">Email</label>
+      <input id="f-email" type="email" name="email" required autocomplete="email">
+      <label for="f-phone">Phone (optional)</label>
+      <input id="f-phone" type="tel" name="phone" autocomplete="tel">
+      <label for="f-msg">Message</label>
+      <textarea id="f-msg" name="message" required placeholder="Parents: what would help your child right now? Businesses: what do you offer, and would a group rate be possible?"></textarea>
+      <button class="btn gold" type="submit">Send</button>
+      <p class="note">Goes straight to the parents who run the fund. We usually reply within a day.</p>
+    </form>
+  </div>
+</section>
+
 </main>
 
 <footer>
@@ -335,8 +377,8 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
     </div>
     <div>
       <strong style="color:var(--ink)">Press &amp; partners</strong><br>
-      <a href="mailto:hello@silverrailchildrensfund.org?subject=Press">Media inquiries</a><br>
-      <a href="mailto:hello@silverrailchildrensfund.org?subject=Partnership">Foundations &amp; partnerships</a>
+      <a href="#contact">Media inquiries</a><br>
+      <a href="#contact">Foundations &amp; partnerships</a>
     </div>
   </div>
 </footer>
