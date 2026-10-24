@@ -5,7 +5,7 @@
 ## How it works
 - A parent registers a child once and shows one ordinary piece of school paperwork to confirm enrollment; the fund looks and does not keep it.
 - From then on, the parent tells the fund what would help the child (a class, a sport, a camp, counseling, a day out) and the fund pays the business or provider directly.
-- Support follows the child to any school or town until the child's 25th birthday, for as long as the fund has money.
+- Support follows the child to any school or town until the child's 25th birthday, as funds allow.
 - Businesses are paid by default; donating or discounting is welcome but never expected.
 - The fund keeps five fields per family and shares nothing with anyone. A monthly public ledger shows every dollar in and out by category, never by child.
 - No board member is paid, and no board member can approve a request for their own child.
