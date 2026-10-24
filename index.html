@@ -81,6 +81,22 @@ dd{margin:4px 0 0;color:var(--ink-2)}
 .ledger tr:last-child td{border:0}
 .sponsor{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 .sponsor .card{text-align:center}
+.strip{background:var(--pine);color:#fff;padding:22px 0}
+.strip .wrap{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.strip div{display:flex;gap:12px;align-items:flex-start;font-size:.95rem;line-height:1.4}
+.strip svg{flex:none;width:22px;height:22px;margin-top:2px}
+.strip b{display:block;font-family:Fraunces,serif;font-size:1.05rem}
+.sofar{background:#fff;border:1px solid var(--rule);border-left:4px solid var(--gold);border-radius:16px;padding:22px 24px;margin-top:22px}
+.sofar h3{margin:0 0 10px}
+.sofar ul{margin:0;padding-left:18px;color:var(--ink-2)}
+.sofar li{margin:6px 0}
+.sofar small{display:block;margin-top:10px;color:var(--ink-2)}
+.badge-wrap{display:grid;gap:28px;grid-template-columns:1fr 1.4fr;align-items:center;margin-top:40px;background:var(--paper-2);border-radius:16px;padding:28px}
+@media(max-width:720px){.badge-wrap{grid-template-columns:1fr}}
+.badge{background:#fff;border:2px solid var(--pine);border-radius:14px;padding:22px;text-align:center;box-shadow:0 8px 24px rgba(91,63,147,.12)}
+.badge svg{width:46px;height:46px}
+.badge .t{font-family:Fraunces,serif;font-weight:700;font-size:1.25rem;color:var(--pine);line-height:1.15;margin:10px 0 6px}
+.badge .s{font-size:.85rem;color:var(--ink-2)}
 footer{padding:48px 0 60px;border-top:1px solid var(--rule);color:var(--ink-2);font-size:.9rem}
 footer .wrap{display:grid;gap:24px;grid-template-columns:1.2fr 1fr 1fr}
 @media(max-width:720px){footer .wrap{grid-template-columns:1fr}}
@@ -124,18 +140,27 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
   </div>
 </div>
 
+<div class="strip">
+  <div class="wrap">
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="#f3c77b" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>100% to the kids</b>Not the school, the district, or anyone else.</span></div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="#f3c77b" stroke-width="2"><path d="M3 10h18M7 15h2m4 0h4"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg><span><b>Businesses paid in full</b>Regular prices, every time. No one is asked to eat the cost.</span></div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="#f3c77b" stroke-width="2"><path d="M4 19h16M6 16V9m4 7V5m4 11v-6m4 6V8"/></svg><span><b>Monthly public ledger</b>Every dollar in and out, posted here.</span></div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="#f3c77b" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span><b>Follows the child</b>Not the building. Wherever they go to school next.</span></div>
+  </div>
+</div>
+
 <section id="why">
   <div class="wrap two">
     <div>
       <div class="eyebrow">Why this fund exists</div>
-      <h2>There was a gap. We filled it.</h2>
-      <p>Bend has been extraordinarily generous. Funds for the families who lost someone go directly to those families, as they should. The school's PTO and the district each have funds for the school and the district. That is what they are for, and we're grateful for all of it.</p>
-      <p>But hundreds of children heard it, hid from it, and were walked out past it. Until now, there was no fund that put anything directly in their hands — not for a weekend, and not for the years ahead.</p>
+      <h2>There was a gap. So we filled it ourselves.</h2>
+      <p>Bend has shown up for us in ways we'll never forget. The funds for the families who lost someone go straight to those families, exactly as they should. The PTO and the district have funds too, and they do real good — but that money stays with the school. If our child transfers, moves, or ends up homeschooling, it doesn't follow them. And what happened on October 15 will.</p>
+      <p>Hundreds of our kids heard it, hid from it, and were walked out past it. They're going to carry that for the rest of their lives. And until now, there was nothing that put anything directly in their hands — not for this weekend, and not for the years ahead.</p>
       <p>This fund started when Silver Rail parents tried to arrange a pumpkin patch trip for our kids — children who so desperately want to be kids again and play with their classmates. We weren't asking for a donation; we wanted to pay a local farm. We learned there was no fund that could do that. So we built one.</p>
     </div>
     <div>
-      <p class="pull">Eligibility is a roster, not a hardship essay. If a child was in the building that day, they're in.</p>
-      <p>A fund attached to a school ends when a child leaves it. This fund is attached to the child. A fifth grader who graduates in June, a family that transfers, a kid who moves across town — they're all still in, through middle school, high school, and college.</p>
+      <p class="pull">Eligibility is a roster, not a hardship essay. If a child was in the building that day, they're in. Parents tell us what their child needs; we pay for it.</p>
+      <p>A fund tied to a school ends the day a child leaves it. This one is tied to the child. The fifth grader who moves on in June, the family that can't walk back through those doors, the kid who ends up across town or at the kitchen table — every one of them is still in, through middle school, high school, and college.</p>
     </div>
   </div>
 </section>
@@ -143,22 +168,22 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
 <section class="band" id="how">
   <div class="wrap">
     <div class="eyebrow">How it works</div>
-    <h2>Three things, in order.</h2>
+    <h2>What we'll do for them, in order.</h2>
     <div class="grid">
       <div class="card">
         <div class="num">Now</div>
         <h3>Experiences &amp; normalcy</h3>
-        <p>The Silver Rail Kids Fun Fund: passes, memberships, kids' nights out, field trips — delivered to every household, no forms. Things a kid would want.</p>
+        <p>The Silver Rail Kids Fun Fund. Parents tell us what their child needs — a pass, a class, a kids' night out, a field trip — and we pay the business directly. No forms, no proving anything. Just the things a kid would actually want.</p>
       </div>
       <div class="card">
         <div class="num">Next</div>
         <h3>Resources as needed</h3>
-        <p>Gap coverage when other support runs out — counseling, tutoring if grades slip, the things that show up months and years later.</p>
+        <p>When other support runs out, we're still here — counseling, tutoring if grades slip, the things that show up months and years after everyone else has moved on.</p>
       </div>
       <div class="card">
         <div class="num">Later</div>
         <h3>Scholarships at 18</h3>
-        <p>A scholarship waiting for each child when they're ready for college or trade school, wherever they've ended up.</p>
+        <p>A scholarship waiting for each child when they're ready for college or trade school — wherever life has taken them by then.</p>
       </div>
     </div>
   </div>
@@ -168,13 +193,24 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
   <div class="wrap">
     <div class="eyebrow">For local businesses</div>
     <h2>Sponsor a Silver Rail kid.</h2>
-    <p style="max-width:680px">We don't ask businesses to give things away. You get paid in full. Your customers add a donation at the register — "sponsor a Silver Rail kid" — and that's what pays for a child's pass, class, or ticket. A one-night fundraiser becomes a standing program.</p>
+    <p style="max-width:680px">We're not asking you to give anything away. You get paid in full, every time. Your customers add a few dollars at the register — "sponsor a Silver Rail kid" — and that's what pays for a child's pass, class, or ticket. One fundraiser night becomes something that lasts.</p>
     <div class="sponsor" style="margin-top:28px">
       <div class="card"><h3>You keep your price</h3><p>Every pass, ticket, and membership is purchased at your ordinary rate.</p></div>
       <div class="card"><h3>We handle the kids</h3><p>Distribution, eligibility, and logistics are ours. You never need a child's name.</p></div>
       <div class="card"><h3>Your customers do the giving</h3><p>A sign and a line on the receipt. We supply both.</p></div>
     </div>
-    <p style="margin-top:28px"><a class="btn" href="mailto:hello@silverrailchildrensfund.org?subject=Sponsor%20a%20Silver%20Rail%20kid">Become a sponsor business</a></p>
+    <div class="badge-wrap">
+      <div class="badge">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#5B3F93"/><path d="M50 78 C30 62 20 52 20 40 a15 15 0 0 1 30 -6 a15 15 0 0 1 30 6 c0 12 -10 22 -30 38z" fill="#f3c77b"/></svg>
+        <div class="t">Sponsor a Silver Rail kid here</div>
+        <div class="s">Add a few dollars at the register. A child gets this experience free.</div>
+      </div>
+      <div>
+        <h3>A sign for your window, a line on your receipt.</h3>
+        <p>Partner businesses get a printed window badge, a register card, and a thank-you on this site. Your customers see where their few dollars went. We handle everything else.</p>
+        <a class="btn" href="mailto:hello@silverrailchildrensfund.org?subject=Sponsor%20a%20Silver%20Rail%20kid">Become a sponsor business</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -182,8 +218,8 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
   <div class="wrap two">
     <div>
       <div class="eyebrow">Transparency</div>
-      <h2>Look us up. We want you to.</h2>
-      <p>This fund is run by parents of Silver Rail children. Directors serve without pay, abstain from any decision that would benefit their own household beyond what every family receives, and publish a monthly ledger of money in and money out.</p>
+      <h2>Look us up. Please.</h2>
+      <p>This fund is run by Silver Rail parents — nobody else. None of us are paid. None of us can vote on anything that gives our own family more than every other family gets. And every month we publish exactly what came in and where it went.</p>
       <p>Businesses are paid in full. Families never apply. No child's name or image is used without a parent's permission.</p>
       <ol class="steps" style="margin-top:28px">
         <li><b>Oregon nonprofit — filed</b>Articles of Incorporation for Silver Rail Children's Fund filed with the Oregon Secretary of State on October 23, 2026.</li>
@@ -191,6 +227,7 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
         <li><b>Oregon DOJ charity registration — next</b>Registration with the Charitable Activities Section follows the bank account opening.</li>
       </ol>
     </div>
+    <div>
     <div class="ledger">
       <h3 style="margin-top:0">The record</h3>
       <table>
@@ -198,10 +235,21 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
         <tr><td>Entity type</td><td>Oregon Domestic Nonprofit Corporation, Public Benefit</td></tr>
         <tr><td>Oregon Registry No.</td><td>264524597</td></tr>
         <tr><td>Filed</td><td>October 23, 2026</td></tr>
+        <tr><td>EIN</td><td>43-2607169</td></tr>
         <tr><td>Federal status</td><td>501(c)(3) application pending</td></tr>
         <tr><td>First program</td><td>Silver Rail Kids Fun Fund</td></tr>
         <tr><td>Monthly ledger</td><td>Published here beginning with the first full month of operations</td></tr>
       </table>
+    </div>
+      <div class="sofar">
+        <h3>What's happened so far</h3>
+        <ul>
+          <li>Oct 22 — Silver Rail Kids Fun Fund launched on GoFundMe</li>
+          <li>Oct 23 — Silver Rail Children's Fund incorporated in Oregon; EIN issued</li>
+          <li>Next — first experiences paid for; bank account and DOJ registration</li>
+        </ul>
+        <small>Updated as things happen. The first monthly ledger posts after our first full month.</small>
+      </div>
     </div>
   </div>
 </section>
@@ -209,7 +257,7 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
 <section>
   <div class="wrap" style="text-align:center">
     <h2>Stand with our children.</h2>
-    <p style="max-width:560px;margin:0 auto 24px;color:var(--ink-2)">Every dollar goes to the kids. Not to a building, not to an agency, not to a lawsuit. To the kids, for years.</p>
+    <p style="max-width:560px;margin:0 auto 24px;color:var(--ink-2)">Every dollar goes to the kids. Not to a building, not to an agency, not to a lawsuit. To the kids — for as long as it takes.</p>
     <a class="btn gold" href="https://www.gofundme.com/f/silver-rail-kids-fun-fund-nve6k" target="_blank" rel="noopener">Give now</a>
   </div>
 </section>
