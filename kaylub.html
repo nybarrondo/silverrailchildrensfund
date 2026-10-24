@@ -130,7 +130,7 @@ footer .taxid{max-width:1100px;margin:28px auto 0;padding:0 20px;font-size:1rem;
     <h2>Leave a message for Kaylub.</h2>
     <p class="note" style="max-width:640px">Messages are read by a Silver Rail parent before they appear here, so it may take a day. First names are fine. Please don't include your child's full name.</p>
     <div class="formbox">
-      <iframe src="GOOGLE_FORM_EMBED_URL" loading="lazy" title="Message to Kaylub form">Loading…</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe9G03KkmafAfeS7a6eGU8v4_wYdql6S-u7WnBnxRDFvynMGA/viewform?embedded=true" loading="lazy" title="Message to Kaylub form">Loading…</iframe>
     </div>
   </div>
 </section>
@@ -146,7 +146,7 @@ footer .taxid{max-width:1100px;margin:28px auto 0;padding:0 20px;font-size:1rem;
 
 <script>
 (async function(){
-  const SHEET_CSV = "GOOGLE_SHEET_CSV_URL";
+  const SHEET_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSD-vLDiBFhSCFV3dGRFL9dgq9rOFKL4MqLy2Eejkx0OhZ7-CuilrHkGviOYAD0NKSgOHNmV8quZ4Zs/pub?output=csv";
   const box = document.getElementById('msgs');
   if (SHEET_CSV.startsWith('GOOGLE')) { box.innerHTML = ''; return; }
   try {

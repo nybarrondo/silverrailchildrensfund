@@ -202,31 +202,10 @@ dl.faq dd{margin:4px 0 0;color:var(--ink-2)}
     <div class="eyebrow">Step one</div>
     <h2>Register your child.</h2>
     <p class="note" style="max-width:640px">One form per child. A Silver Rail parent will email you within three days to confirm enrollment. Nothing you write here is shared.</p>
-    <form class="form" action="https://formspree.io/f/maeenywz" method="POST" id="regform">
-      <input type="hidden" name="_subject" value="Registration: Silver Rail Children's Fund">
-      <input type="hidden" name="form_type" value="registration">
-      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-      <label for="pname">Your name</label>
-      <input id="pname" name="parent_name" required autocomplete="name">
-      <div class="row">
-        <div><label for="pemail">Email</label><input id="pemail" type="email" name="email" required autocomplete="email"></div>
-        <div><label for="pphone">Phone</label><input id="pphone" type="tel" name="phone" required autocomplete="tel"></div>
-      </div>
-      <div class="row">
-        <div><label for="cname">Child's first name</label><input id="cname" name="child_first_name" required autocomplete="off"></div>
-        <div><label for="cgrade">Grade on October 15</label>
-          <select id="cgrade" name="child_grade" required>
-            <option value="">Choose one</option>
-            <option>Kindergarten</option><option>1st grade</option><option>2nd grade</option><option>3rd grade</option><option>4th grade</option><option>5th grade</option><option>Not enrolled, but present that day</option>
-          </select></div>
-      </div>
-      <label class="check"><input type="checkbox" name="attest" value="yes" required> I confirm that this child was enrolled at or present at Silver Rail Elementary on October 15, 2026, and that I am their parent or legal guardian.</label>
-      <label for="pnote">Anything we should know? (optional)</label>
-      <textarea id="pnote" name="note" placeholder="Best way to reach you, a sibling you'll register next, or nothing at all."></textarea>
-      <button class="btn" type="submit">Register</button>
-      <p class="note">This goes only to the Silver Rail parents who run the fund. We'll be in touch within three days.</p>
-    </form>
-    <div class="ok" id="regok">Thank you. You're on the list. A Silver Rail parent will email you within three days to confirm enrollment, and after that, you're in for good.</div>
+    <div class="formbox" style="max-width:720px">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmCbc_zlRm5s5C6rJGNDCrfCTUQi-crnhY8pdW0bZgPD2_gw/viewform?embedded=true" loading="lazy" title="Register your child" style="height:1500px">Loading…</iframe>
+    </div>
+    <p class="note" style="margin-top:12px">Your answers go straight into the fund's own private Google Workspace, opened only by board officers. If the form doesn't load, <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmCbc_zlRm5s5C6rJGNDCrfCTUQi-crnhY8pdW0bZgPD2_gw/viewform" target="_blank" rel="noopener">open it in a new tab</a> or email hello@silverrailchildrensfund.org.</p>
   </div>
 </section>
 
@@ -250,19 +229,7 @@ dl.faq dd{margin:4px 0 0;color:var(--ink-2)}
 </section>
 </main>
 
-<script>
-(function(){
-  var f=document.getElementById('regform'),ok=document.getElementById('regok');
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    var b=f.querySelector('button');b.disabled=true;b.textContent='Sending…';
-    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
-      .then(function(r){if(r.ok){f.style.display='none';ok.style.display='block';ok.scrollIntoView({behavior:'smooth',block:'center'});}else{throw 0;}})
-      .catch(function(){b.disabled=false;b.textContent='Register';alert('Something went wrong. Please email hello@silverrailchildrensfund.org and we\'ll register you by hand.');});
-  });
-  document.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('header').classList.remove('open')})});
-})();
-</script>
+<script>document.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('header').classList.remove('open')})});</script>
 <footer>
   <div class="wrap">
     <strong style="color:var(--ink)">Silver Rail Children's Fund</strong> · Bend, Oregon · <a href="/">silverrailchildrensfund.org</a><br>
