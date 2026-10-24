@@ -75,9 +75,10 @@ section{padding:72px 0;border-top:1px solid var(--rule)}
 .num{font-family:Fraunces,serif;font-size:2.2rem;color:var(--gold-2);font-weight:700;line-height:1;margin-bottom:12px}
 .band .num{color:var(--gold)}
 .two{display:grid;gap:48px;grid-template-columns:1.1fr .9fr;align-items:start}
+.two .sticky{position:sticky;top:92px}
 @media(max-width:820px){.two{grid-template-columns:1fr}}
 .photo{border-radius:16px;overflow:hidden;box-shadow:0 12px 32px rgba(31,42,43,.14);margin-bottom:22px}
-.photo img{display:block;width:100%;height:auto}
+.photo img{display:block;width:100%;height:auto;max-height:520px;object-fit:cover;object-position:50% 40%}
 .photo figcaption{font-size:.85rem;color:var(--ink-2);padding:10px 2px 0}
 .pull{font-family:Fraunces,serif;font-size:1.5rem;line-height:1.35;color:var(--pine);border-left:4px solid var(--gold);padding-left:20px;margin:28px 0}
 .steps{counter-reset:s;list-style:none;padding:0;margin:0}
@@ -206,15 +207,15 @@ small.legal{display:block;margin-top:18px;line-height:1.5}
       <h2>There was a gap. So we filled it ourselves.</h2>
       <p>Hundreds of our kids heard it, hid from it, and were walked out past it. They're going to carry that for the rest of their lives. And until now, there was nothing that supported their needs directly — not for this weekend, and not for the years ahead.</p>
       <p>This fund started when Silver Rail parents tried to arrange a field trip for all Silver Rail kids to the local pumpkin patch next week — children who so desperately want to be kids again and play with their classmates. We weren't asking for a donation; we wanted to pay a local farm. We learned there was no fund that could do that. So we built one.</p>
+      <p>A fund tied to a school ends the day a child leaves it. This fund supports the child as they grow up. The fifth grader who moves on in June, the family that can't walk back through those doors and ends up switching schools or homeschooling, the kid who moves across town — every one of them is still in, through middle school, high school, and college.</p>
+      <p>Silver Rail may not reopen until after Thanksgiving, or even the new year. Until then our kids are home, apart from their classmates, and what they need most is each other. The weeks after they return to school will be some of the hardest. So will the day another school shooting is on the news. Grief isn't linear. Our kids deserved better, and your support helps them get what they need, when they need it.</p>
     </div>
-    <div>
+    <div class="sticky">
       <figure class="photo" style="margin:0 0 22px">
         <img src="sign.jpg" alt="A hand-drawn sign reading 'We deserve better — Silver Rail Elementary' among flowers at the memorial" width="1200" height="960" loading="lazy">
         <figcaption>"We deserve better." Left at the Drake Park memorial by a Silver Rail fourth grader.</figcaption>
       </figure>
       <p class="pull">If a child was in that building on October 15, they are automatically included. Parents simply let us know what will help their child heal, play, or grow — and we handle the cost directly. Healing shouldn't come with paperwork.</p>
-      <p>A fund tied to a school ends the day a child leaves it. This fund supports the child as they grow up. The fifth grader who moves on in June, the family that can't walk back through those doors and ends up switching schools or homeschooling, the kid who moves across town — every one of them is still in, through middle school, high school, and college.</p>
-      <p>Silver Rail may not reopen until after Thanksgiving, or even the new year. Until then our kids are home, apart from their classmates, and what they need most is each other. The weeks after they return to school will be some of the hardest. So will the day another school shooting is on the news. Grief isn't linear. Our kids deserved better, and your support helps them get what they need, when they need it.</p>
     </div>
   </div>
 </section>
