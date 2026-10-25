@@ -70,7 +70,9 @@ section{padding:56px 0;border-top:1px solid var(--rule)}
 .bar a{color:var(--ink);text-decoration:none;border-bottom:1.5px solid rgba(31,42,43,.35)}
 .bar a:hover{border-color:var(--ink)}
 @media(max-width:1120px){header nav .btn{display:none}header.open nav a.btn{display:inline-block}.barx{display:none}.bar{font-size:1rem;padding:11px 16px}}
-footer{padding:40px 0 60px;border-top:1px solid var(--rule);color:var(--ink-2);font-size:.9rem}
+footer{padding:48px 0 64px;border-top:2px solid var(--pine);background:var(--paper-2);color:var(--ink-2);font-size:.9rem}
+footer .about{max-width:720px;margin-bottom:18px}
+footer .about p{margin:.5em 0 0;font-size:1rem;color:var(--ink);line-height:1.55}
 footer .taxid{max-width:1140px;margin:28px auto 0;padding:0 20px;font-size:1rem;color:var(--ink)}
 .form{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:28px;max-width:640px}
 .form label{display:block;font-weight:600;font-size:.9rem;margin:16px 0 6px}
@@ -212,7 +214,11 @@ dl.faq dd{margin:4px 0 0;color:var(--ink-2)}
 <script>document.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('header').classList.remove('open')})});</script>
 <footer>
   <div class="wrap">
-    <strong style="color:var(--ink)">Silver Rail Children's Fund</strong> · Bend, Oregon · <a href="/">silverrailchildrensfund.org</a><br>
+    <div class="about">
+      <strong style="color:var(--ink);font-size:1.05rem">Silver Rail Children's Fund</strong>
+      <p>A nonprofit started and run by Silver Rail Elementary parents. 100% of what comes in goes to the children who were at Silver Rail on October 15 — for what they need now, when it matters most, and, as funds allow, for years to come. The support follows the child, wherever they go to school next.</p>
+    </div>
+    <p style="margin:0"><a href="/">silverrailchildrensfund.org</a> · hello@silverrailchildrensfund.org · Bend, Oregon</p>
     <small>Oregon public benefit nonprofit. Oregon Registry No. 264524597. 501(c)(3) application in progress; donations are not tax-deductible unless and until it is granted.</small>
   </div>
   <p class="taxid"><strong>Tax ID 43-2607169</strong></p>
