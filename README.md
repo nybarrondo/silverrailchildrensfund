@@ -1,6 +1,8 @@
 # Silver Rail Children's Fund — website
 
-Single-page static site. No build step. Edit `index.html`, push, done.
+Static site. No build step. Edit the HTML, push, done.
+
+Pages: `index.html`, `parents.html`, `oregon-crime-victims-compensation.html` (CVC parent guide; update the "Last updated" line, `dateModified` in the JSON-LD, and `sitemap.xml` when it changes), `board.html`, `volunteer.html`, `kaylub.html`, `pizza-day.html`. Every page carries the same nav block; when you add a page, add its link to each one.
 
 ## Deploy to GitHub Pages (one time, ~10 min)
 
