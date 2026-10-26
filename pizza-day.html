@@ -113,6 +113,12 @@ dl.faq dd{margin:4px 0 0;color:var(--ink-2)}
 .sess .card{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:22px}
 .sess .card b{display:block;font-family:Fraunces,serif;font-size:1.35rem;color:var(--pine);margin-bottom:4px}
 .sess .card p{margin:0;color:var(--ink-2)}
+.sess .card{position:relative}
+.sess .card.full{opacity:.55;filter:grayscale(1);background:var(--paper-2)}
+.sess .card.full b{text-decoration:line-through;text-decoration-thickness:2px}
+.sess .card.open{border-color:var(--pine);box-shadow:0 6px 20px rgba(91,63,147,.12)}
+.sess .tag{position:absolute;top:14px;right:14px;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--ink-2);color:#fff}
+.sess .tag.go{background:var(--pine)}
 .thanks{display:flex;gap:28px;align-items:center;background:#fff;border:1px solid var(--rule);border-radius:20px;padding:28px;max-width:860px;flex-wrap:wrap}
 .thanks .logos{display:flex;gap:18px;align-items:center;flex:none}
 .thanks .d{background:#fff;border:1px solid var(--rule);border-radius:14px;padding:10px;width:130px}
@@ -165,10 +171,10 @@ dl.faq dd{margin:4px 0 0;color:var(--ink-2)}
   <div class="wrap">
     <h2>Two days. Pick the one that works.</h2>
     <div class="sess">
-      <div class="card"><b>Friday, Oct 30</b><p>10:00 am – 1:00 pm · the day before Halloween<br>Deschutes Brewery Public House<br>1044 NW Bond St, downtown Bend<br>Costumes welcome 🎃</p></div>
-      <div class="card"><b>Wednesday, Nov 4</b><p>2:30 – 5:00 pm<br>Deschutes Brewery Public House<br>1044 NW Bond St, downtown Bend<br>Costumes still welcome 🎃</p></div>
+      <div class="card full"><span class="tag">Full</span><b>Friday, Oct 30</b><p>10:00 am – 1:00 pm · the day before Halloween<br>Deschutes Brewery Public House<br>1044 NW Bond St, downtown Bend<br>Full — waitlist only</p></div>
+      <div class="card open"><span class="tag go">Open</span><b>Wednesday, Nov 4</b><p>2:30 – 5:00 pm<br>Deschutes Brewery Public House<br>1044 NW Bond St, downtown Bend<br>Costumes still welcome 🎃</p></div>
     </div>
-    <p class="note" style="max-width:720px;margin-top:18px">60 spots each day, kids and adults together. Friday is filling fast; Wednesday has plenty of room. A parent or guardian stays with their child the whole time. Siblings are welcome. If your day fills, you'll get an email with your place in line and can switch to the other day.</p>
+    <p class="note" style="max-width:720px;margin-top:18px">60 spots each day, kids and adults together. Friday is full; Wednesday has room. A parent or guardian stays with their child the whole time. Siblings are welcome. If your day fills, you'll get an email with your place in line and can switch to the other day.</p>
     <div class="kids" style="margin-top:22px">
       <strong>What happens</strong>
       <ul>
