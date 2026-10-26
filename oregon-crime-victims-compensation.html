@@ -66,8 +66,6 @@ section{padding:48px 0;border-top:1px solid var(--rule)}
 .bar a{color:var(--ink);text-decoration:none;border-bottom:1.5px solid rgba(31,42,43,.35)}
 .bar a:hover{border-color:var(--ink)}
 @media(max-width:1120px){header nav .btn{display:none}header.open nav a.btn{display:inline-block}.barx{display:none}.bar{font-size:1rem;padding:11px 16px}}
-footer{padding:40px 0 60px;border-top:1px solid var(--rule);color:var(--ink-2);font-size:.9rem}
-footer .taxid{max-width:1140px;margin:28px auto 0;padding:0 20px;font-size:1rem;color:var(--ink)}
 .note{font-size:.9rem;color:var(--ink-2)}
 .callout{background:#efe9fb;border:1px solid var(--lav);border-radius:14px;padding:18px 22px;margin:22px 0}
 .callout b{color:var(--pine)}
@@ -91,6 +89,23 @@ ul.plain li{margin-bottom:8px}
 .toc li{margin-bottom:4px}
 .sources{font-size:.9rem;color:var(--ink-2)}
 .sources li{margin-bottom:4px}
+footer.sf{padding:56px 0 40px;border-top:2px solid var(--pine);background:var(--paper-2);color:var(--ink-2);font-size:.92rem}
+footer.sf .sf-top{display:grid;gap:40px;grid-template-columns:1.1fr 1.6fr;align-items:start}
+footer.sf .sf-brand{display:inline-flex;align-items:center;gap:10px;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}
+footer.sf .sf-brand svg{width:28px;height:28px;flex:none}
+footer.sf .sf-about p{margin:12px 0 14px;color:var(--ink);line-height:1.55;max-width:480px}
+footer.sf .sf-trust{list-style:none;margin:0 0 18px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+footer.sf .sf-trust li{font-size:.8rem;font-weight:600;color:var(--pine);background:#fff;border:1px solid var(--rule);border-radius:999px;padding:5px 11px}
+footer.sf .sf-about .btn{padding:11px 20px;font-size:.92rem}
+footer.sf .sf-cols{display:grid;gap:24px;grid-template-columns:repeat(4,1fr)}
+footer.sf .sf-cols strong{display:block;color:var(--ink);margin-bottom:10px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+footer.sf .sf-cols a{display:block;color:var(--ink-2);text-decoration:none;margin:0 0 8px;line-height:1.4}
+footer.sf .sf-cols a:hover{color:var(--pine);text-decoration:underline}
+footer.sf .sf-legal{margin-top:40px;padding-top:22px;border-top:1px solid var(--rule);font-size:.82rem;line-height:1.55}
+footer.sf .sf-legal p{margin:0 0 6px;max-width:900px}
+footer.sf .sf-legal a{color:var(--ink-2)}
+@media(max-width:900px){footer.sf .sf-top{grid-template-columns:1fr}footer.sf .sf-cols{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){footer.sf .sf-cols{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -302,13 +317,56 @@ ul.plain li{margin-bottom:8px}
 </section>
 </main>
 
-<footer>
-  <div class="wrap">
-    <strong style="color:var(--ink)">Silver Rail Children's Fund</strong> · Bend, Oregon · <a href="/">silverrailchildrensfund.org</a><br>
-    <a href="oregon-crime-victims-compensation.html" style="font-weight:600">Crime Victims' Compensation guide for Silver Rail families</a><br>
-    <small>Oregon public benefit nonprofit. Oregon Registry No. 264524597. 501(c)(3) application in progress; donations are not tax-deductible unless and until it is granted.</small>
+<footer class="sf">
+  <div class="wrap sf-top">
+    <div class="sf-about">
+      <a class="sf-brand" href="/"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#5B3F93"/><path d="M50 78 C30 62 20 52 20 40 a15 15 0 0 1 30 -6 a15 15 0 0 1 30 6 c0 12 -10 22 -30 38z" fill="#f3c77b"/></svg>Silver Rail Children's Fund</a>
+      <p>A nonprofit started and run by Silver Rail Elementary parents. 100% of what comes in goes to the children who were at Silver Rail on October 15 — for what they need now, when it matters most, and, as funds allow, for years to come. The support follows the child, wherever they go to school next.</p>
+      <ul class="sf-trust">
+        <li>Parent-led, all volunteer</li>
+        <li>100% to the kids</li>
+        <li>Every dollar posted monthly</li>
+        <li>Eligible until age 25</li>
+      </ul>
+      <a class="btn" href="https://www.gofundme.com/f/silver-rail-kids-fun-fund-nve6k" target="_blank" rel="noopener">Give to the Kids Fun Fund</a>
+    </div>
+    <div class="sf-cols">
+      <div>
+        <strong>Give</strong>
+        <a href="https://www.gofundme.com/f/silver-rail-kids-fun-fund-nve6k" target="_blank" rel="noopener">Kids Fun Fund on GoFundMe</a>
+        <a href="/#sponsor">Sponsor a Silver Rail kid</a>
+        <a href="/#businesses">For businesses</a>
+        <a href="volunteer.html">Volunteer</a>
+      </div>
+      <div>
+        <strong>For families</strong>
+        <a href="parents.html">Register your child</a>
+        <a href="pizza-day.html">Pizza Day at Deschutes</a>
+        <a href="oregon-crime-victims-compensation.html">Crime Victims' Compensation guide</a>
+        <a href="kaylub.html">Messages for Kaylub</a>
+      </div>
+      <div>
+        <strong>About</strong>
+        <a href="/#how">How it works</a>
+        <a href="board.html">Board of Directors</a>
+        <a href="/#transparency">Transparency &amp; records</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+      <div>
+        <strong>Press &amp; partners</strong>
+        <a href="https://ktvz.com/central-oregon-strong/2026/10/25/silver-rail-parents-launch-nonprofit-offering-support-for-students-who-survived-tragedy/" target="_blank" rel="noopener">In the news: KTVZ, Oct 25</a>
+        <a href="/#contact">Media inquiries</a>
+        <a href="/#contact">Foundations &amp; partnerships</a>
+        <a href="mailto:hello@silverrailchildrensfund.org">hello@silverrailchildrensfund.org</a>
+      </div>
+    </div>
   </div>
-  <p class="taxid"><strong>Tax ID 43-2607169</strong></p>
+  <div class="wrap sf-legal">
+    <p><strong>Silver Rail Children's Fund</strong> · Bend, Oregon · <a href="mailto:hello@silverrailchildrensfund.org">hello@silverrailchildrensfund.org</a></p>
+    <p>Oregon public benefit nonprofit corporation · Oregon Registry No. 264524597 · <strong>Tax ID 43-2607169</strong></p>
+    <p>An application for recognition of exemption under Section 501(c)(3) is in progress. Contributions are not tax-deductible unless and until it is granted; if granted, exemption is retroactive to our incorporation date. We provide a receipt to every donor. We never publish children's names or photos.</p>
+    <p>© 2026 Silver Rail Children's Fund</p>
+  </div>
 </footer>
 <script>document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>document.querySelector("header").classList.remove("open")));</script>
 </body>
