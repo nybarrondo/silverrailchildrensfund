@@ -11,7 +11,7 @@
     "wed_nov4": {"families": 9, "kids": 17, "adults": 14, "cap": 60, "status": "open"},
     "not_yet_registered_with_fund": 23
   },
-  "pumpkin_patch": {"form_live": false, "wed_dd": 0, "thu_dd": 0, "thu_smith_rock": 0, "fri_dd": 0, "sat_dd": 0},
+  "pumpkin_patch": {"form_live": true, "wed_dd": 0, "thu_dd": 0, "thu_smith_rock": 0, "fri_dd": 0, "sat_dd": 0},
   "volunteers": 2,
   "contact_messages": 9
 }
