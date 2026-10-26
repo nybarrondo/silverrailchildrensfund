@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-26T14:00:46-07:00",
+  "as_of": "2026-10-26T15:09:00-07:00",
   "family_registry": {
     "children": 28, "families": 20,
     "by_grade": {"K": 6, "1st": 5, "2nd": 3, "3rd": 3, "4th": 7, "5th": 4, "other": 0},
@@ -8,8 +8,8 @@
   "pizza_day": {
     "fri_oct30": {"families": 18, "kids": 30, "adults": 30, "cap": 60, "status": "full"},
     "fri_oct30_waitlist_families": 8,
-    "wed_nov4": {"families": 8, "kids": 15, "adults": 13, "cap": 60, "status": "open"},
-    "not_yet_registered_with_fund": 22
+    "wed_nov4": {"families": 9, "kids": 17, "adults": 14, "cap": 60, "status": "open"},
+    "not_yet_registered_with_fund": 23
   },
   "pumpkin_patch": {"form_live": false, "wed_dd": 0, "thu_dd": 0, "thu_smith_rock": 0, "fri_dd": 0, "sat_dd": 0},
   "volunteers": 2,
