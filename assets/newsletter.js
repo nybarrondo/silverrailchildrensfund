@@ -10,6 +10,8 @@
    copy the link, and paste the entry.NNN ids below. Until FORM_ACTION is set,
    the popup falls back to a pre-addressed email to hello@. */
 (function () {
+  var ENABLED = false;             // hidden Oct 26, 2026 at Nicole's request; set true to bring it back
+  if (!ENABLED) return;
   var FORM_ACTION = '';            // e.g. https://docs.google.com/forms/d/e/XXXX/formResponse
   var F_EMAIL = '';                // e.g. entry.1234567890
   var F_NAME  = '';                // e.g. entry.2345678901
