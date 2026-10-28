@@ -24,3 +24,6 @@ Sitemap: https://silverrailchildrensfund.org/sitemap.xml
 
 User-agent: *
 Disallow: /board-room/
+
+User-agent: *
+Disallow: /docs/dd-ranch
