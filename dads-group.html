@@ -118,7 +118,7 @@ footer.sf .sf-legal a{color:var(--ink-2)}
 <section class="post"><div class="wrap">
 
 <div class="box" id="sessions">
-<p class="meta" style="margin:0 0 .3em">Sunday night &amp; Wednesday night · small groups of 1 to 3 · free</p>
+<p class="meta" style="margin:0 0 .3em">Free · small groups of 1 to 3 · walk-ups welcome</p>
 <h2 style="margin-top:0">Counseling sessions with Rex Allison</h2>
 <p>Rex Allison of Deschutes County Health is meeting with Silver Rail dads and partners in small groups of one to three. You'll talk about:</p>
 <ul>
@@ -126,17 +126,50 @@ footer.sf .sf-legal a{color:var(--ink-2)}
 <li>How to talk with your spouse or partner when you're both carrying this</li>
 <li>How to ease stress and anxiety as the kids get ready to go back to school</li>
 </ul>
-<p>A Tuesday night group may be added. Spots are limited.</p>
-<p style="margin:0"><b>To save a spot, text Rex at <a href="sms:+15413903978">541-390-3978</a>.</b></p>
+<p><b>When:</b></p>
+<ul>
+<li><b>Sunday night, Nov 1</b>, by appointment. Rex will confirm the time.</li>
+<li><b>Wednesday, Nov 4, right after the district's Silver Rail family and staff session</b> (5:30–7:30 pm at R.E. Jewell Elementary, 20550 Murphy Road). <b>Walk-ups welcome.</b></li>
+<li>A Tuesday night group may be added.</li>
+</ul>
 </div>
 
-<p><img src="assets/dads-group-flyer.png" alt="Silver Rail Dads Group flyer: free small-group counseling with Rex Allison, Sunday and Wednesday nights. Text Rex at 541-390-3978." style="width:100%;max-width:540px;border-radius:14px;border:1px solid var(--rule)"><br><a href="assets/dads-group-flyer.png" download>Download the flyer</a></p>
-
-<h2>Join the Dads Group</h2>
-<p>We're building a regular group for Silver Rail dads and partners: time together, a meal, maybe a hike or a game, and a counselor there when it helps. No speeches, no pressure. Come as you are.</p>
-<p>To hear about the next get-together, email <a href="mailto:hello@silverrailchildrensfund.org?subject=Silver%20Rail%20Dads%20Group">hello@silverrailchildrensfund.org</a> with "Dads Group" in the subject line, along with your name and the best way to reach you.</p>
-<p class="note">Rex's sessions are offered by Rex as a community service. If you or someone you love is in crisis, call or text 988 any time.</p>
-</div></section>
+<div class="box" id="signup">
+<h2 style="margin-top:0">Sign up</h2>
+<p>Fill this in and tap the button. It opens a text to Rex with your details filled in. Just hit send. Prefer email? Use the second button and we'll pass it to Rex.</p>
+<form id="dadsForm" onsubmit="return false" style="display:grid;gap:12px;max-width:520px">
+<label>Your name<br><input id="dn" required style="width:100%;padding:12px;border:1px solid var(--rule);border-radius:10px;font:inherit"></label>
+<label>Your phone<br><input id="dp" type="tel" required style="width:100%;padding:12px;border:1px solid var(--rule);border-radius:10px;font:inherit"></label>
+<label>Which session?<br><select id="ds" style="width:100%;padding:12px;border:1px solid var(--rule);border-radius:10px;font:inherit">
+<option>Sunday night, Nov 1</option>
+<option>Wednesday, Nov 4, after the Jewell session</option>
+<option>Tuesday group, if it happens</option>
+<option>Any of them</option>
+</select></label>
+<label>Have you registered your child with the Silver Rail Children's Fund?<br><select id="dr" style="width:100%;padding:12px;border:1px solid var(--rule);border-radius:10px;font:inherit">
+<option>Yes</option><option>Not yet</option><option>Not sure</option>
+</select></label>
+<p class="note" style="margin:-4px 0 0">Not yet? You're still welcome. You can <a href="parents.html">register your child here</a> anytime.</p>
+<label>How many joining you? (optional)<br><input id="dc" placeholder="Just me, or me and 1 friend" style="width:100%;padding:12px;border:1px solid var(--rule);border-radius:10px;font:inherit"></label>
+<div style="display:flex;gap:10px;flex-wrap:wrap">
+<button class="btn" type="button" onclick="dadsGo('sms')" style="border:0;cursor:pointer;font:inherit;font-weight:600">Text my sign-up to Rex</button>
+<button class="btn gold" type="button" onclick="dadsGo('mail')" style="border:0;cursor:pointer;font:inherit;font-weight:600">Email it instead</button>
+</div>
+<p id="dmsg" class="note" style="margin:0"></p>
+</form>
+<p class="note" style="margin-top:12px">Or just text Rex directly at <a href="sms:+15413903978">541-390-3978</a>. Nothing you enter here is stored on our website.</p>
+</div>
+<script>
+function dadsGo(how){
+var n=document.getElementById('dn').value.trim(),p=document.getElementById('dp').value.trim(),
+    se=document.getElementById('ds').value,c=document.getElementById('dc').value.trim(),r=document.getElementById('dr').value,m=document.getElementById('dmsg');
+if(!n||!p){m.textContent='Please add your name and phone.';return}
+var t='Hi Rex, this is '+n+' ('+p+'), a Silver Rail dad/partner. I would like a spot: '+se+'.'+' Registered with the fund: '+r+'.'+(c?' Joining: '+c+'.':'');
+if(how==='sms'){location.href='sms:+15413903978'+(/iPhone|iPad|Mac/.test(navigator.userAgent)?'&':'?')+'body='+encodeURIComponent(t)}
+else{location.href='mailto:hello@silverrailchildrensfund.org?subject='+encodeURIComponent('Dads Group sign-up: '+se)+'&body='+encodeURIComponent(t)}
+m.textContent='Opening your '+(how==='sms'?'text messages':'email')+'. Just hit send.';
+}
+</script></section>
 </main>
 
 <footer class="sf">
