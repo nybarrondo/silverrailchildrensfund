@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-01T12:25:53-08:00",
+  "as_of": "2026-11-01T15:19:04-08:00",
   "family_registry": {
     "children": 60,
     "families": 44,
@@ -60,10 +60,10 @@
     },
     "fri_dd": {
       "families": 18,
-      "kids": 25,
+      "kids": 26,
       "siblings": 14,
       "adults": 35,
-      "people": 74
+      "people": 75
     },
     "sat_dd": {
       "families": 3,
