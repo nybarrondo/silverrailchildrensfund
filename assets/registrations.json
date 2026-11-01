@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-01T09:18:57-08:00",
+  "as_of": "2026-11-01T12:25:53-08:00",
   "family_registry": {
     "children": 60,
     "families": 44,
@@ -75,5 +75,5 @@
     "alerts": []
   },
   "volunteers": 13,
-  "contact_messages": 21
+  "contact_messages": 22
 }
