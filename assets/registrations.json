@@ -1,26 +1,79 @@
 {
-  "as_of": "2026-10-26T19:09:01-07:00",
+  "as_of": "2026-11-01T09:18:57-08:00",
   "family_registry": {
-    "children": 29, "families": 21,
-    "by_grade": {"K": 6, "1st": 5, "2nd": 3, "3rd": 3, "4th": 7, "5th": 5, "other": 0},
-    "photo_yes": 12, "photo_no": 5, "photo_blank": 12
+    "children": 60,
+    "families": 44,
+    "by_grade": {
+      "K": 10,
+      "1st": 11,
+      "2nd": 7,
+      "3rd": 10,
+      "4th": 13,
+      "5th": 8,
+      "other": 1
+    },
+    "photo_yes": 34,
+    "photo_no": 14,
+    "photo_blank": 12
   },
   "pizza_day": {
-    "fri_oct30": {"families": 18, "kids": 30, "adults": 30, "cap": 60, "status": "full"},
-    "fri_oct30_waitlist_families": 8,
-    "wed_nov4": {"families": 9, "kids": 17, "adults": 14, "cap": 60, "status": "open"},
-    "not_yet_registered_with_fund": 23
+    "fri_oct30": {
+      "families": 18,
+      "kids": 30,
+      "adults": 30,
+      "cap": 60,
+      "status": "full"
+    },
+    "fri_oct30_waitlist_families": 14,
+    "wed_nov4": {
+      "families": 20,
+      "kids": 39,
+      "adults": 30,
+      "cap": 60,
+      "status": "full"
+    },
+    "not_yet_registered_with_fund": 33
   },
   "pumpkin_patch": {
     "form_live": true,
-    "families_total": 8,
-    "wed_dd": {"families": 1, "kids": 1, "siblings": 1, "adults": 1, "people": 3},
-    "thu_dd": {"families": 1, "kids": 1, "siblings": 1, "adults": 1, "people": 3},
-    "thu_smith_rock": {"families": 3, "kids": 3, "siblings": 3, "adults": 5, "people": 11},
-    "fri_dd": {"families": 4, "kids": 5, "siblings": 5, "adults": 10, "people": 20},
-    "sat_dd": {"families": 1, "kids": 3, "siblings": 0, "adults": 2, "people": 5},
+    "families_total": 76,
+    "wed_dd": {
+      "families": 4,
+      "kids": 6,
+      "siblings": 2,
+      "adults": 7,
+      "people": 15
+    },
+    "thu_dd": {
+      "families": 13,
+      "kids": 18,
+      "siblings": 9,
+      "adults": 20,
+      "people": 47
+    },
+    "thu_smith_rock": {
+      "families": 46,
+      "kids": 67,
+      "siblings": 35,
+      "adults": 71,
+      "people": 173
+    },
+    "fri_dd": {
+      "families": 18,
+      "kids": 25,
+      "siblings": 14,
+      "adults": 35,
+      "people": 74
+    },
+    "sat_dd": {
+      "families": 3,
+      "kids": 5,
+      "siblings": 1,
+      "adults": 5,
+      "people": 11
+    },
     "alerts": []
   },
-  "volunteers": 2,
-  "contact_messages": 10
+  "volunteers": 13,
+  "contact_messages": 21
 }
