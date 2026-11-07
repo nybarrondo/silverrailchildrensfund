@@ -1,18 +1,18 @@
 {
-  "as_of": "2026-11-07T13:17:19-08:00",
+  "as_of": "2026-11-07T13:39:00-08:00",
   "family_registry": {
-    "children": 89,
-    "families": 63,
+    "children": 91,
+    "families": 65,
     "by_grade": {
       "K": 20,
       "1st": 13,
       "2nd": 10,
-      "3rd": 14,
-      "4th": 19,
+      "3rd": 15,
+      "4th": 20,
       "5th": 11,
       "other": 2
     },
-    "photo_yes": 51,
+    "photo_yes": 53,
     "photo_no": 25,
     "photo_blank": 13
   },
@@ -127,7 +127,7 @@
     "Help requests": 3,
     "Letters to the Governor": 3
   },
-  "volunteers": 18,
+  "volunteers": 19,
   "contact_messages": 26,
   "pumpkin_patch": {
     "form_live": true,
