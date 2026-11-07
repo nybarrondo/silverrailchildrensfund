@@ -1,39 +1,134 @@
 {
-  "as_of": "2026-11-01T15:19:04-08:00",
+  "as_of": "2026-11-07T13:17:19-08:00",
   "family_registry": {
-    "children": 60,
-    "families": 44,
+    "children": 89,
+    "families": 63,
     "by_grade": {
-      "K": 10,
-      "1st": 11,
-      "2nd": 7,
-      "3rd": 10,
-      "4th": 13,
-      "5th": 8,
-      "other": 1
+      "K": 20,
+      "1st": 13,
+      "2nd": 10,
+      "3rd": 14,
+      "4th": 19,
+      "5th": 11,
+      "other": 2
     },
-    "photo_yes": 34,
-    "photo_no": 14,
-    "photo_blank": 12
+    "photo_yes": 51,
+    "photo_no": 25,
+    "photo_blank": 13
   },
-  "pizza_day": {
-    "fri_oct30": {
-      "families": 18,
-      "kids": 30,
-      "adults": 30,
-      "cap": 60,
-      "status": "full"
+  "events": [
+    {
+      "name": "Kids Night Out",
+      "date": "2026-11-06",
+      "sheet_id": "1ikK0XbItesd-JL6dXwDb5oNZKpixMq8X6Yq4EkHsFao",
+      "families": 45,
+      "kids": 79,
+      "adults": 0,
+      "people": 79,
+      "cap": 70,
+      "status": "full",
+      "waitlist_families": 3,
+      "past": true
     },
-    "fri_oct30_waitlist_families": 14,
-    "wed_nov4": {
+    {
+      "name": "Play Theory 2nd Grade Meetup",
+      "date": "2026-11-06",
+      "sheet_id": "16glLi1rOTqAK0AM_V8pJL43t-61yF2SL1VNn2X_OYJ4",
+      "families": 3,
+      "kids": 5,
+      "adults": 4,
+      "people": 9,
+      "cap": 60,
+      "status": "open",
+      "waitlist_families": 0,
+      "past": true
+    },
+    {
+      "name": "Play Theory 1st Grade Meetup",
+      "date": "2026-11-09",
+      "sheet_id": "102ZeliRZti1KXwuK4evYWs0il3PlJtRh-D3Ywkhi_mM",
+      "families": 8,
+      "kids": 13,
+      "adults": 9,
+      "people": 22,
+      "cap": 60,
+      "status": "open",
+      "waitlist_families": 0,
+      "past": false
+    },
+    {
+      "name": "Play Theory Kindergarten Meetup",
+      "date": "2026-11-09",
+      "sheet_id": "1njun79dMxjnTOYbLVYKaw5Nc1AySpHJ77eRHajB7H4o",
       "families": 20,
-      "kids": 39,
-      "adults": 30,
+      "kids": 32,
+      "adults": 24,
+      "people": 56,
       "cap": 60,
-      "status": "full"
+      "status": "open",
+      "waitlist_families": 0,
+      "past": false
     },
-    "not_yet_registered_with_fund": 33
+    {
+      "name": "Little Gym Childcare",
+      "date": "2026-11-02",
+      "sheet_id": "1qxeY70isYqm8RXatbtob1CE8dwRzrxE5QQj6wcvVJ5E",
+      "families": 21,
+      "kids": 36,
+      "adults": 0,
+      "people": 36,
+      "cap": null,
+      "status": "open",
+      "waitlist_families": 0,
+      "past": true
+    },
+    {
+      "name": "Rise Modern Wellness — Adult Reset Lounge Pass",
+      "date": "2026-11-03",
+      "sheet_id": "1CeRqNUgmM36oLcRQiZIy5wpMVb4F6EZulYsoPGkEbEQ",
+      "families": 11,
+      "kids": 0,
+      "adults": 11,
+      "people": 11,
+      "cap": null,
+      "status": "open",
+      "waitlist_families": 0,
+      "past": true
+    },
+    {
+      "name": "Pumpkin Patch Days",
+      "date": "2026-10-31",
+      "sheet_id": "19xWGpdUIHLEBTzq5fQ16djgaN3ALv7f_uRQWp5mNGKo",
+      "families": 76,
+      "kids": 166,
+      "adults": 127,
+      "people": 293,
+      "cap": null,
+      "status": "open",
+      "waitlist_families": 0,
+      "past": true
+    },
+    {
+      "name": "Pizza Day — Deschutes",
+      "date": "2026-11-04",
+      "sheet_id": "1TiIRKf2UmoKy-468P-Ced59bQ44H0u1QMv24VbZTYq8",
+      "families": 52,
+      "kids": 94,
+      "adults": 81,
+      "people": 175,
+      "cap": 60,
+      "status": "full",
+      "waitlist_families": 14,
+      "past": true
+    }
+  ],
+  "other": {
+    "Tutoring applications": 1,
+    "Help requests": 3,
+    "Letters to the Governor": 3
   },
+  "volunteers": 18,
+  "contact_messages": 26,
   "pumpkin_patch": {
     "form_live": true,
     "families_total": 76,
@@ -74,6 +169,22 @@
     },
     "alerts": []
   },
-  "volunteers": 13,
-  "contact_messages": 22
+  "pizza_day": {
+    "fri_oct30": {
+      "families": 18,
+      "kids": 30,
+      "adults": 30,
+      "cap": 60,
+      "status": "full"
+    },
+    "fri_oct30_waitlist_families": 14,
+    "wed_nov4": {
+      "families": 20,
+      "kids": 39,
+      "adults": 30,
+      "cap": 60,
+      "status": "full"
+    },
+    "not_yet_registered_with_fund": 33
+  }
 }
