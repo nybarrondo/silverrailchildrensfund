@@ -1,18 +1,18 @@
 {
-  "as_of": "2026-11-07T15:11:00-08:00",
+  "as_of": "2026-11-07T17:14:08-08:00",
   "family_registry": {
-    "children": 93,
-    "families": 66,
+    "children": 96,
+    "families": 68,
     "by_grade": {
       "K": 21,
-      "1st": 13,
+      "1st": 15,
       "2nd": 11,
       "3rd": 15,
-      "4th": 20,
+      "4th": 21,
       "5th": 11,
       "other": 2
     },
-    "photo_yes": 55,
+    "photo_yes": 58,
     "photo_no": 25,
     "photo_blank": 13
   },
