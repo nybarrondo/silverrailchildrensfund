@@ -129,6 +129,11 @@ dl.faq dd{margin:4px 0 0;color:var(--ink-2)}
 .phoneform{display:none}
 @media(max-width:640px){.phoneform{display:block}.phoneform .btn{display:block;text-align:center}.phoneform .note{margin-top:10px}#register .formbox{display:none}.formlink{display:none}}
 .note{font-size:.9rem;color:var(--ink-2)}
+.gal{display:grid;gap:14px;grid-template-columns:repeat(4,1fr)}
+.gal figure{margin:0;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:var(--paper-2)}
+.gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.gal figure:hover img{transform:scale(1.03)}
+@media(max-width:800px){.gal{grid-template-columns:1fr 1fr}}
 .castpic img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 14px 40px rgba(31,42,43,.18)}
 .castpic figcaption{font-size:.82rem;color:var(--ink-2);margin-top:8px;text-align:right}
 .kids{background:var(--paper-2);border-radius:16px;padding:22px 24px;max-width:720px}
@@ -229,6 +234,19 @@ footer.sf .sf-legal a{color:var(--ink-2)}
         <li>No photos of children without a parent's say-so. No press.</li>
       </ul>
     </div>
+  </div>
+</section>
+
+
+<section id="gallery" style="padding:40px 0 8px;border:0">
+  <div class="wrap">
+    <div class="gal">
+      <figure><img src="assets/nutcracker-snowflakes.jpg" alt="Snowflake dancers in white tutus with silver wands in the Land of Snow" loading="lazy"></figure>
+      <figure><img src="assets/nutcracker-prince.jpg" alt="The Nutcracker in a red soldier's coat and tall hat, sword raised" loading="lazy"></figure>
+      <figure><img src="assets/nutcracker-pas-de-deux.jpg" alt="Clara in a white dress lifted by her prince" loading="lazy"></figure>
+      <figure><img src="assets/nutcracker-mouse-king.jpg" alt="The Mouse King and his soldiers in red and green costumes" loading="lazy"></figure>
+    </div>
+    <p class="note" style="text-align:right;margin:8px 0 0">Scenes from <i>Nutcracker! Magical Christmas Ballet</i>. Photos courtesy of Nutcracker.com.</p>
   </div>
 </section>
 
