@@ -257,60 +257,16 @@ footer.sf .sf-legal a{color:var(--ink-2)}
     <h2>Reserve your seats.</h2>
     <p class="note" style="max-width:640px">For Silver Rail families, teachers and staff. One form per household. Reserve by <b>8:00 pm Tuesday, November 10</b>. Seats are confirmed by email in the order received; after that, you're on the waitlist and we'll tell you right away if seats open.</p>
     <!--FORM-->
-    <form class="form" id="nutForm" onsubmit="return nutGo(event)" style="max-width:720px">
-      <h3 style="margin:0 0 4px">About you</h3>
-      <p class="note" style="margin:0 0 6px">Parents, guardians, teachers and staff all use this same form.</p>
-      <div class="row">
-        <div><label for="pf">Your first name</label><input id="pf" required autocomplete="given-name"></div>
-        <div><label for="pl">Last name</label><input id="pl" required autocomplete="family-name"></div>
-      </div>
-      <div class="row">
-        <div><label for="pe">Email</label><input id="pe" type="email" required autocomplete="email"></div>
-        <div><label for="pp">Cell phone</label><input id="pp" type="tel" required autocomplete="tel"></div>
-      </div>
-      <label for="pr">Who are you?</label>
-      <select id="pr"><option>Parent or guardian — my child is registered with the fund</option><option>Parent or guardian — not registered yet</option><option>Parent or guardian — not sure</option><option>Silver Rail teacher or staff</option><option>Silver Rail teacher or staff with my own kids coming</option></select>
-
-      <h3 style="margin:28px 0 4px">Silver Rail children (if any)</h3>
-      <p class="note" style="margin:0">First and last name, grade, and teacher's last name for each Silver Rail child. Siblings go in the seat count below. Teachers and staff without children coming can skip this part.</p>
-      <label for="k1">Child 1 — name · grade · teacher</label><input id="k1" placeholder="e.g. Maya Rivera · 2nd · Mrs. Nguyen">
-      <label for="k2">Child 2 (if any)</label><input id="k2" placeholder="name · grade · teacher">
-      <label for="k3">Child 3 (if any)</label><input id="k3" placeholder="name · grade · teacher">
-
-      <h3 style="margin:28px 0 4px">Seats</h3>
-      <p class="note" style="margin:0">Every person needs a seat, little ones included. Kids', teachers' and staff seats are on the fund; other adult seats are $45 each. Counts help us keep headcounts for the theatre.</p>
-      <div class="row">
-        <div><label for="sS">Silver Rail students</label><input id="sS" type="number" min="0" max="10" value="1" required></div>
-        <div><label for="sB">Siblings</label><input id="sB" type="number" min="0" max="10" value="0" required></div>
-      </div>
-      <div class="row">
-        <div><label for="sP">Parents or guardians</label><input id="sP" type="number" min="0" max="4" value="1" required></div>
-        <div><label for="sG">Grandparents</label><input id="sG" type="number" min="0" max="4" value="0" required></div>
-      </div>
-      <label for="sO">Foster or other caregivers</label><input id="sO" type="number" min="0" max="4" value="0" required>
-      <label for="sT">Silver Rail teachers or staff (seats on the fund)</label><input id="sT" type="number" min="0" max="4" value="0" required>
-      <label for="help">Adult seats</label>
-      <select id="help"><option>We'll pay for our adult seats ($45 each on Givebutter)</option><option>Please cover our adult seats too. It's a stretch right now.</option></select>
-      <label for="ac">Seating or accessibility needs (wheelchair space, aisle seat, sensory needs, anything else)</label>
-      <textarea id="ac" placeholder="Optional"></textarea>
-
-      <h3 style="margin:28px 0 4px">Photos</h3>
-      <label for="ph">May the fund photograph you and your family at the event?</label>
-      <select id="ph" required>
-        <option value="">Choose one</option>
-        <option>Yes — photos help the fund</option>
-        <option>Yes, but no faces</option>
-        <option>No photos of my family</option>
-      </select>
-
-      <label class="check"><input type="checkbox" id="ok" required> I'm the parent or guardian of the children above, or a Silver Rail teacher or staff member. I understand kids', teachers' and staff seats are covered by the fund and other adult seats are $45 each unless I asked for help above, that seats are limited and confirmed by email, that our tickets are held by a fund volunteer at the Tower Theatre, and that we'll be in the lobby by 6:30 pm on Wednesday, November 18.</label>
-
-      <button class="btn" type="submit">Reserve our seats</button>
-      <p class="note">Tap the button and your reservation opens in your email app addressed to hello@silverrailchildrensfund.org. Just hit send, and we'll confirm by email. Nothing you enter is stored on this website.</p>
-      <p id="nmsg" class="ok"></p>
-    </form>
+    <div class="formbox" id="nutFormBox">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScUPDkWRc8FAt8LSI_7bgaM2Yol0PKF4DuJ8W7Q08EXmDF1sg/viewform?embedded=true" title="Nutcracker reservation form" style="height:2600px" loading="lazy">Loading…</iframe>
+    </div>
+    <div class="phoneform">
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScUPDkWRc8FAt8LSI_7bgaM2Yol0PKF4DuJ8W7Q08EXmDF1sg/viewform" target="_blank" rel="noopener">Open the reservation form</a>
+      <p class="note">Opens in a new tab. You’ll get a confirmation email right away.</p>
+    </div>
+    <p class="note formlink" style="margin-top:10px">Form not loading? <a href="https://docs.google.com/forms/d/e/1FAIpQLScUPDkWRc8FAt8LSI_7bgaM2Yol0PKF4DuJ8W7Q08EXmDF1sg/viewform" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
     <!--/FORM-->
-    <p class="note" style="margin-top:14px;max-width:640px">Trouble with the form? Email <a href="mailto:hello@silverrailchildrensfund.org?subject=Nutcracker%20reservation">hello@silverrailchildrensfund.org</a> with your name, phone, your Silver Rail children's names, grades and teachers, and how many seats you need.</p>
+    <p class="note" style="margin-top:14px;max-width:640px">Prefer email? Write to <a href="mailto:hello@silverrailchildrensfund.org?subject=Nutcracker%20reservation">hello@silverrailchildrensfund.org</a> with your name, phone, your Silver Rail children's names, grades and teachers, and how many seats you need.</p>
   </div>
 </section>
 
@@ -328,22 +284,6 @@ footer.sf .sf-legal a{color:var(--ink-2)}
 </section>
 </main>
 
-<script>
-function nutGo(e){
-  e.preventDefault();
-  var v=function(id){return (document.getElementById(id).value||'').trim()};
-  var n=v('pf')+' '+v('pl'),seats=['sS','sB','sP','sG','sO','sT'].map(function(i){return +v(i)||0}),total=seats.reduce(function(a,b){return a+b},0);
-  if(total<1){alert('Please enter at least one seat.');return false}
-  var kids=[v('k1'),v('k2'),v('k3')].filter(Boolean).map(function(k,i){return 'Child '+(i+1)+': '+k}).join('\n')||'Children: none (staff)';
-  var body='Nutcracker reservation — Wed Nov 18, 7 pm, Tower Theatre\n\n'+
-    'Name: '+n+'\nEmail: '+v('pe')+'\nPhone: '+v('pp')+'\nWho: '+v('pr')+'\n\n'+kids+'\n\n'+
-    'Seats requested: '+total+' total\n  Silver Rail students: '+seats[0]+'\n  Siblings: '+seats[1]+'\n  Parents/guardians: '+seats[2]+'\n  Grandparents: '+seats[3]+'\n  Foster/other caregivers: '+seats[4]+'\n  Teachers/staff (on the fund): '+seats[5]+'\n\n'+
-    'Adult seats: '+v('help')+'\nSeating/accessibility: '+(v('ac')||'none')+'\nPhotos: '+v('ph')+'\n\nI am the parent or guardian of the children above, or a Silver Rail teacher or staff member, and agree to the terms on silverrailchildrensfund.org/nutcracker.html.';
-  location.href='mailto:hello@silverrailchildrensfund.org?subject='+encodeURIComponent('Nutcracker reservation: '+n+' ('+total+' seats)')+'&body='+encodeURIComponent(body);
-  var m=document.getElementById('nmsg');m.style.display='block';m.textContent='Opening your email app. Hit send and you\'re in line. We\'ll confirm by email.';
-  return false;
-}
-</script>
 
 <script>document.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('header').classList.remove('open')})});</script>
 <footer class="sf">
