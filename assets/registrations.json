@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-08T12:30:33-08:00",
+  "as_of": "2026-11-08T14:48:34-08:00",
   "family_registry": {
     "children": 110,
     "families": 76,
@@ -125,7 +125,8 @@
   "other": {
     "Tutoring applications": 1,
     "Help requests": 4,
-    "Letters to the Governor": 3
+    "Letters to the Governor": 3,
+    "Nutcracker reservations": 9
   },
   "volunteers": 19,
   "contact_messages": 26,
