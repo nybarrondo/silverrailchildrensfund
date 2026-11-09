@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-09T09:11:41-08:00",
+  "as_of": "2026-11-09T10:10:04-08:00",
   "family_registry": {
     "children": 119,
     "families": 81,
@@ -127,9 +127,9 @@
     "Help requests": 5,
     "Letters to the Governor": 3,
     "Nutcracker reservations": 18,
-    "Healing Reins sign-ups": 10
+    "Healing Reins sign-ups": 11
   },
-  "volunteers": 20,
+  "volunteers": 21,
   "contact_messages": 27,
   "pumpkin_patch": {
     "form_live": true,
