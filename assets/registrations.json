@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-11-08T18:10:43-08:00",
+  "as_of": "2026-11-08T19:12:43-08:00",
   "family_registry": {
-    "children": 111,
-    "families": 77,
+    "children": 113,
+    "families": 78,
     "by_grade": {
       "K": 22,
-      "1st": 17,
+      "1st": 18,
       "2nd": 14,
       "3rd": 16,
       "4th": 23,
       "5th": 13,
-      "other": 6
+      "other": 7
     },
     "photo_yes": 69,
-    "photo_no": 29,
+    "photo_no": 31,
     "photo_blank": 13
   },
   "events": [
@@ -126,9 +126,9 @@
     "Tutoring applications": 1,
     "Help requests": 4,
     "Letters to the Governor": 3,
-    "Nutcracker reservations": 9
+    "Nutcracker reservations": 13
   },
-  "volunteers": 19,
+  "volunteers": 20,
   "contact_messages": 26,
   "pumpkin_patch": {
     "form_live": true,
