@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-11-09T11:13:36-08:00",
+  "as_of": "2026-11-09T12:12:13-08:00",
   "family_registry": {
-    "children": 119,
-    "families": 81,
+    "children": 120,
+    "families": 82,
     "by_grade": {
       "K": 23,
       "1st": 18,
       "2nd": 15,
-      "3rd": 16,
+      "3rd": 17,
       "4th": 25,
       "5th": 15,
       "other": 7
     },
     "photo_yes": 72,
-    "photo_no": 34,
+    "photo_no": 35,
     "photo_blank": 13
   },
   "events": [
@@ -130,7 +130,7 @@
     "Healing Reins sign-ups": 12
   },
   "volunteers": 21,
-  "contact_messages": 27,
+  "contact_messages": 29,
   "pumpkin_patch": {
     "form_live": true,
     "families_total": 76,
