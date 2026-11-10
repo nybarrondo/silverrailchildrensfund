@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-09T22:45:18-08:00",
+  "as_of": "2026-11-09T23:18:09-08:00",
   "family_registry": {
     "children": 124,
     "families": 84,
@@ -126,12 +126,12 @@
     "Tutoring applications": 1,
     "Help requests": 6,
     "Letters to the Governor": 3,
-    "Nutcracker reservations": 20,
+    "Nutcracker reservations": 22,
     "Healing Reins sign-ups": 15,
     "Tempest at BEAT sign-ups": 1,
     "COGA Veterans Day Camp sign-ups": 4
   },
-  "volunteers": 21,
+  "volunteers": 22,
   "contact_messages": 32,
   "pumpkin_patch": {
     "form_live": true,
@@ -192,4 +192,3 @@
     "not_yet_registered_with_fund": 33
   }
 }
-
