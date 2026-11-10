@@ -1,18 +1,18 @@
 {
-  "as_of": "2026-11-09T20:11:43-08:00",
+  "as_of": "2026-11-09T21:10:41-08:00",
   "family_registry": {
-    "children": 123,
-    "families": 83,
+    "children": 124,
+    "families": 84,
     "by_grade": {
       "K": 24,
-      "1st": 18,
+      "1st": 19,
       "2nd": 15,
       "3rd": 17,
       "4th": 26,
       "5th": 15,
       "other": 8
     },
-    "photo_yes": 75,
+    "photo_yes": 76,
     "photo_no": 35,
     "photo_blank": 13
   },
@@ -126,10 +126,10 @@
     "Tutoring applications": 1,
     "Help requests": 6,
     "Letters to the Governor": 3,
-    "Nutcracker reservations": 19,
-    "Healing Reins sign-ups": 13,
-    "Tempest at BEAT sign-ups": 0,
-    "COGA Veterans Day Camp sign-ups": 0
+    "Nutcracker reservations": 20,
+    "Healing Reins sign-ups": 14,
+    "Tempest at BEAT sign-ups": 1,
+    "COGA Veterans Day Camp sign-ups": 3
   },
   "volunteers": 21,
   "contact_messages": 32,
