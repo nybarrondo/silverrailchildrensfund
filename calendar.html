@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Events calendar — Silver Rail Children's Fund</title>
+<meta name="description" content="Every Silver Rail Children's Fund event for families in one calendar. Free for Silver Rail kids, staff and their families. Se habla español.">
+<meta name="theme-color" content="#5B3F93">
+<link rel="canonical" href="https://silverrailchildrensfund.org/calendar.html">
+<meta property="og:title" content="Events calendar — Silver Rail Children's Fund">
+<meta property="og:description" content="Every Silver Rail Children's Fund event for families in one calendar. Free for Silver Rail kids, staff and their families. Se habla español.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://silverrailchildrensfund.org/calendar.html">
+<meta property="og:image" content="https://silverrailchildrensfund.org/share.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%235B3F93'/><path d='M50 78 C30 62 20 52 20 40 a15 15 0 0 1 30 -6 a15 15 0 0 1 30 6 c0 12 -10 22 -30 38z' fill='%23f3c77b'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1f2a2b;--ink-2:#4a5a5c;--paper:#fbf8f2;--paper-2:#f2ece0;--pine:#5B3F93;--pine-2:#47307A;--lav:#B8A9DD;--gold:#f3c77b;--gold-2:#d8a74f;--rule:#dfd6c4;--max:1140px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;letter-spacing:-.01em;line-height:1.1;margin:0 0 .5em}
+h1{font-size:clamp(2.2rem,5.5vw,3.6rem)}
+h2{font-size:clamp(1.5rem,3.2vw,2.1rem)}
+p{margin:0 0 1em}
+a{color:var(--pine)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.btn{display:inline-block;background:var(--pine);color:#fff;text-decoration:none;font-weight:600;padding:14px 24px;border-radius:999px}
+.btn.gold{background:var(--gold);color:var(--ink)}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;font-weight:600;color:var(--pine);margin-bottom:.8em}
+header{position:sticky;top:0;z-index:10;background:rgba(251,248,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;white-space:nowrap;text-decoration:none;color:var(--ink);font-family:Fraunces,serif;font-weight:700;font-size:1.1rem}
+.brand svg{width:30px;height:30px}
+nav{display:flex;align-items:center;flex-wrap:nowrap}
+nav a{margin-left:16px;text-decoration:none;color:var(--ink-2);font-weight:500;font-size:.9rem;white-space:nowrap}
+nav .btn{padding:9px 16px;font-size:.9rem;color:#fff;margin-left:18px}
+.menubtn{display:none;width:42px;height:42px;border:1px solid var(--rule);border-radius:10px;background:#fff;cursor:pointer;margin-left:12px;padding:0;align-items:center;justify-content:center}
+.menubtn span{display:block;width:18px;height:2px;background:var(--pine);position:relative}
+.menubtn span::before,.menubtn span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--pine)}
+.menubtn span::before{top:-6px}.menubtn span::after{top:6px}
+@media(max-width:1440px){
+  header .wrap{height:60px;gap:8px}
+  .brand{font-size:.98rem;white-space:nowrap;gap:8px;min-width:0}
+  .brand svg{width:26px;height:26px;flex:none}
+  .menubtn{width:38px;height:38px;margin-left:auto}
+  nav{display:none}
+  nav .btn{margin-left:8px;padding:8px 14px;font-size:.85rem}
+  .hero{padding:44px 0 36px}
+  nav a:not(.btn){display:none}
+  .menubtn{display:flex}
+  header.open nav a:not(.btn){display:block}
+  header.open nav{position:absolute;left:0;right:0;top:60px;display:block;background:var(--paper);border-bottom:1px solid var(--rule);padding:8px 20px 16px;box-shadow:0 12px 30px rgba(31,42,43,.12)}
+  header.open nav a{margin:0;padding:12px 4px;font-size:1.05rem;border-bottom:1px solid var(--rule)}
+  header.open nav a.btn{display:inline-block;margin-top:14px;border:0;color:#fff;padding:11px 18px}
+}
+.hero{padding:72px 0 48px;background:radial-gradient(900px 400px at 85% -10%,rgba(184,169,221,.45),transparent 60%),var(--paper)}
+.hero p.lede{font-size:1.2rem;color:var(--ink-2);max-width:640px}
+section{padding:56px 0;border-top:1px solid var(--rule)}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.msg{background:#fff;border:1px solid var(--rule);border-top:4px solid var(--gold);border-radius:16px;padding:24px 26px;break-inside:avoid}
+.msg p{font-family:Fraunces,Georgia,serif;font-size:1.15rem;line-height:1.45;margin:0 0 14px;color:var(--ink)}
+.msg .who{font-size:.9rem;color:var(--ink-2)}
+.msg .who b{color:var(--pine);font-weight:600}
+.empty{color:var(--ink-2);font-style:italic}
+.formbox{background:#fff;border:1px solid var(--rule);border-radius:16px;overflow:hidden}
+.formbox iframe{display:block;width:100%;height:1100px;border:0}
+.note{font-size:.9rem;color:var(--ink-2)}
+.bar{background:var(--gold);color:var(--ink);font-weight:600;font-size:.95rem;text-align:center;padding:10px 16px}
+.bar a{color:var(--ink);text-decoration:none;border-bottom:1.5px solid rgba(31,42,43,.35)}
+.bar a:hover{border-color:var(--ink)}
+@media(max-width:1440px){header nav .btn{display:none}header.open nav a.btn{display:inline-block}.barx{display:none}.bar{font-size:1rem;padding:11px 16px}}
+footer.sf{padding:56px 0 40px;border-top:2px solid var(--pine);background:var(--paper-2);color:var(--ink-2);font-size:.92rem}
+footer.sf .sf-top{display:grid;gap:40px;grid-template-columns:1.1fr 1.6fr;align-items:start}
+footer.sf .sf-brand{display:inline-flex;align-items:center;gap:10px;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}
+footer.sf .sf-brand svg{width:28px;height:28px;flex:none}
+footer.sf .sf-about p{margin:12px 0 14px;color:var(--ink);line-height:1.55;max-width:480px}
+footer.sf .sf-trust{list-style:none;margin:0 0 18px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+footer.sf .sf-trust li{font-size:.8rem;font-weight:600;color:var(--pine);background:#fff;border:1px solid var(--rule);border-radius:999px;padding:5px 11px}
+footer.sf .sf-about .btn{padding:11px 20px;font-size:.92rem}
+footer.sf .sf-cols{display:grid;gap:24px;grid-template-columns:repeat(4,1fr)}
+footer.sf .sf-cols strong{display:block;color:var(--ink);margin-bottom:10px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+footer.sf .sf-cols a{display:block;color:var(--ink-2);text-decoration:none;margin:0 0 8px;line-height:1.4}
+footer.sf .sf-cols a:hover{color:var(--pine);text-decoration:underline}
+footer.sf .sf-legal{margin-top:40px;padding-top:22px;border-top:1px solid var(--rule);font-size:.82rem;line-height:1.55}
+footer.sf .sf-legal p{margin:0 0 6px;max-width:900px}
+footer.sf .sf-legal a{color:var(--ink-2)}
+@media(max-width:900px){footer.sf .sf-top{grid-template-columns:1fr}footer.sf .sf-cols{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){footer.sf .sf-cols{grid-template-columns:1fr}}
+.post{padding:48px 0 72px}.post .wrap{max-width:740px}.post h2{font-size:1.4rem;margin-top:1.8em}.post ul{padding-left:1.2em}.post li{margin-bottom:.5em}.post .meta{font-size:.9rem;color:var(--ink-2)}.post .box{background:var(--paper-2);border-left:4px solid var(--pine);padding:18px 22px;border-radius:0 12px 12px 0;margin:1.6em 0}.post .box p:last-child{margin:0}.post .steps{counter-reset:s;list-style:none;padding:0}.post .steps li{counter-increment:s;position:relative;padding-left:44px;margin-bottom:.9em}.post .steps li::before{content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--pine);color:#fff;font-weight:700;display:grid;place-items:center;font-size:.9rem}.pgal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:6px 0 16px}.pgal img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;display:block}@media(min-width:700px){.pgal{grid-template-columns:repeat(4,1fr)}}
+.hero{padding:56px 0 24px}.hero .lede{font-size:1.15rem;color:var(--ink-2);max-width:62ch}
+.se{font-size:.95rem;color:var(--ink-2)}.langbtn{background:none;border:1px solid var(--lav);color:var(--pine);border-radius:999px;padding:4px 12px;font:600 .85rem Inter,sans-serif;cursor:pointer}
+.calsec{padding:8px 0 72px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+.chip{border:1px solid var(--rule);background:#fff;border-radius:999px;padding:7px 14px;font:600 .9rem Inter,sans-serif;cursor:pointer;color:var(--ink);display:flex;align-items:center;gap:6px}
+.chip .dot{width:10px;height:10px;border-radius:50%}
+.chip[aria-pressed="false"]{opacity:.45}
+.calbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.calbar h2{margin:0;min-width:9ch;text-align:center;font-size:1.7rem}
+.calbar .nav{width:42px;height:42px;border-radius:50%;border:1px solid var(--rule);background:#fff;font-size:1.2rem;cursor:pointer;color:var(--pine)}
+.views{margin-left:auto;display:flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden}
+.views button{border:0;background:#fff;padding:8px 16px;font:600 .9rem Inter,sans-serif;cursor:pointer;color:var(--ink-2)}
+.views button.on{background:var(--pine);color:#fff}
+.dow,.grid7{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.dow div{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);text-align:center;padding:4px 0}
+.day{background:#fff;border:1px solid var(--rule);border-radius:12px;min-height:104px;padding:6px;text-align:left;cursor:pointer;font:inherit;color:inherit;display:flex;flex-direction:column;gap:4px;position:relative}
+.day.blank{background:transparent;border:0;cursor:default}
+.day .n{font-size:.85rem;font-weight:600;color:var(--ink-2)}
+.day.today{border:2px solid var(--pine)}.day.today .n{color:var(--pine)}
+.day.past{background:var(--paper-2)}.day.past .ev{opacity:.55}
+.day.sel{box-shadow:0 0 0 3px var(--gold)}
+.day:disabled{cursor:default}
+.ev{display:flex;align-items:center;gap:5px;font-size:.78rem;line-height:1.2;border-radius:8px;padding:3px 5px;color:var(--ink)}
+.ev .ic{font-size:1.15rem;line-height:1}
+.ev .t{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.more{font-size:.75rem;color:var(--pine);font-weight:600}
+.detail{margin:22px 0 0}
+.detail h3{font-size:1.35rem;margin:0 0 12px}
+.card{background:#fff;border:1px solid var(--rule);border-left:6px solid var(--pine);border-radius:14px;padding:16px 18px;margin:0 0 12px;display:flex;gap:14px;align-items:flex-start}
+.card .big{font-size:2.2rem;line-height:1;flex:none;width:52px;height:52px;border-radius:14px;display:grid;place-items:center}
+.card h4{font:700 1.1rem Fraunces,Georgia,serif;margin:0 0 4px}
+.card .meta{font-size:.92rem;color:var(--ink-2);margin:0 0 6px}
+.card p{margin:0 0 8px;font-size:.95rem}
+.card .go{font-weight:600;font-size:.92rem}
+.card .tag{display:inline-block;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;border-radius:999px;padding:2px 8px;margin-left:6px;vertical-align:middle}
+.card.past{opacity:.6}
+.lday{font:700 1.05rem Fraunces,Georgia,serif;margin:22px 0 10px;color:var(--pine)}
+.anyh{margin:48px 0 14px;font-size:1.5rem}
+.anytime{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.anytime .card{margin:0}
+.empty{color:var(--ink-2);font-size:.95rem}
+@media(max-width:700px){
+ .day{min-height:58px;padding:4px;align-items:center}
+ .day .n{font-size:.8rem}
+ .ev{padding:0;justify-content:center}.ev .t{display:none}.ev .ic{font-size:1rem}
+ .day .evs{display:flex;flex-wrap:wrap;gap:1px;justify-content:center}
+ .dow,.grid7{gap:3px}
+ .calbar h2{font-size:1.35rem}
+ .views{margin-left:0}
+}
+</style>
+</head>
+<body>
+<header data-closemenu>
+  <div class="wrap">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#5B3F93"/><path d="M50 78 C30 62 20 52 20 40 a15 15 0 0 1 30 -6 a15 15 0 0 1 30 6 c0 12 -10 22 -30 38z" fill="#f3c77b"/></svg>
+      Silver Rail Children's Fund
+    </a>
+    <button class="menubtn" aria-label="Menu" onclick="document.querySelector('header').classList.toggle('open')"><span></span></button>
+    <nav>
+      <a href="calendar.html">Calendar</a>
+      <a href="/#how">How it works</a>
+      <a href="/#sponsor">Businesses</a>
+      <a href="/#transparency">Transparency</a>
+      <a href="board.html">Board</a>
+      <a href="/#faq">FAQ</a>
+      <a href="parents.html">For parents</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="heal-through-service.html">Heal &amp; Serve</a>
+      <a href="letters-to-the-governor.html">Letter to the Governor</a>
+      <a href="/#contact">Contact</a>
+      <a class="btn" href="https://givebutter.com/c/support-lifelong-healing-for-silver-rail-kids-vhn38h" target="_blank" rel="noopener">Give</a>
+    </nav>
+  </div>
+</header>
+<div class="bar"><a href="https://givebutter.com/c/support-lifelong-healing-for-silver-rail-kids-vhn38h" target="_blank" rel="noopener">Give to the Kids Fun Fund &rarr;</a><span class="barx"> &nbsp;&middot;&nbsp; 100% to the kids</span></div>
+
+<main>
+<div class="hero"><div class="wrap">
+  <div class="eyebrow" data-i18n="eyebrow">Events calendar · free for Silver Rail families</div>
+  <h1 data-i18n="h1">What's happening for our kids.</h1>
+  <p class="lede" data-i18n="lede">Every fund event in one place. Tap a day to see what's on, then tap an event to sign up. Every event is free for Silver Rail kids, staff, and their children and grandchildren.</p>
+  <p class="se">Se habla español · <a href="tel:+18583538268">(858) 353-8268</a> · <button type="button" id="langBtn" class="langbtn">Ver en español</button></p>
+</div></div>
+
+<section class="calsec"><div class="wrap">
+  <div class="chips" id="chips" role="group" aria-label="Filter by type"></div>
+
+  <div class="calbar">
+    <button type="button" class="nav" id="prev" aria-label="Previous month">&larr;</button>
+    <h2 id="monthTitle" aria-live="polite"></h2>
+    <button type="button" class="nav" id="next" aria-label="Next month">&rarr;</button>
+    <div class="views">
+      <button type="button" id="vMonth" class="on" data-i18n="month">Month</button>
+      <button type="button" id="vList" data-i18n="list">List</button>
+    </div>
+  </div>
+
+  <div id="monthView">
+    <div class="dow" id="dow"></div>
+    <div class="grid7" id="grid"></div>
+  </div>
+  <div id="listView" hidden></div>
+
+  <div class="detail" id="detail" aria-live="polite"></div>
+
+  <h2 class="anyh" data-i18n="anytime">Anytime, no date needed</h2>
+  <div class="anytime" id="anytime"></div>
+</div></section>
+</main>
+<script>(function(){
+var CATS={
+ play:{c:'#7C5CC4',bg:'#efe9fb',en:'Play',es:'Juego'},
+ horses:{c:'#8a5a2b',bg:'#f6ebdf',en:'Horses',es:'Caballos'},
+ learn:{c:'#1f7a6d',bg:'#e1f3ef',en:'Learning',es:'Aprendizaje'},
+ family:{c:'#c0673a',bg:'#fbe9df',en:'Family & food',es:'Familia y comida'},
+ arts:{c:'#b23a6f',bg:'#f9e3ee',en:'Arts & shows',es:'Arte y teatro'},
+ care:{c:'#3a6fb2',bg:'#e3ecf9',en:'Support',es:'Apoyo'}
+};
+// d: date or [start,end]; t: time; e: emoji
+var EV=[
+ {d:['2026-10-28','2026-10-31'],cat:'family',e:'🎃',en:'Pumpkin Patch Days at DD Ranch',es:'Días en el huerto de calabazas, DD Ranch',t:'Afternoons',tes:'Por la tarde',p:'DD Ranch, Terrebonne',u:'pumpkin-patch.html'},
+ {d:'2026-10-29',cat:'family',e:'🎃',en:'Pumpkin Patch Day at Smith Rock Ranch',es:'Día en el huerto de calabazas, Smith Rock Ranch',t:'Afternoon',tes:'Por la tarde',p:'Smith Rock Ranch, Terrebonne',u:'pumpkin-patch.html'},
+ {d:'2026-10-30',cat:'family',e:'🍕',en:'Pizza Day with Deschutes chefs',es:'Día de pizza con los chefs de Deschutes',t:'Afternoon',tes:'Por la tarde',p:'Deschutes Brewery Public House',u:'pizza-day.html'},
+ {d:'2026-11-01',cat:'care',e:'💬',en:'Dads group with Rex Allison',es:'Grupo de papás con Rex Allison',t:'Evening, by appointment',tes:'Por la noche, con cita',p:'Text Rex for directions',pes:'Escriba a Rex para la dirección',u:'dads-group.html'},
+ {d:'2026-11-02',cat:'play',e:'🌋',en:'Floor Is Lava Pajama Party',es:'Fiesta de pijamas "El piso es lava"',t:'11:30 am – 2:30 pm',p:'The Little Gym of Bend',u:'little-gym.html'},
+ {d:'2026-11-04',cat:'family',e:'🍕',en:'Pizza Day with Deschutes chefs',es:'Día de pizza con los chefs de Deschutes',t:'2:30 – 5 pm',p:'Deschutes Brewery Public House',u:'pizza-day.html'},
+ {d:'2026-11-04',cat:'care',e:'💬',en:'Dads group with Rex Allison',es:'Grupo de papás con Rex Allison',t:'Evening, walk-ups welcome',tes:'Por la noche, sin cita',p:'Text Rex for directions',pes:'Escriba a Rex para la dirección',u:'dads-group.html'},
+ {d:'2026-11-06',cat:'play',e:'🧩',en:'2nd Grade Play Day',es:'Día de juego de 2.º grado',t:'12 – 2 pm',p:'Play Theory Cafe',u:'play-theory.html'},
+ {d:'2026-11-06',cat:'play',e:'🤸',en:'Kids Night Out',es:'Noche de niños',t:'6 – 9 pm',p:'Mountain Air Trampoline Park',u:'kids-night-out.html'},
+ {d:'2026-11-09',cat:'play',e:'🧩',en:'Kindergarten and 1st Grade Play Days',es:'Días de juego de kínder y 1.er grado',t:'1 – 3 pm',p:'Play Theory Cafe',u:'play-theory-kindergarten.html'},
+ {d:'2026-11-11',cat:'play',e:'🤸‍♀️',en:'Veterans Day Camp at COGA',es:'Campamento del Día de los Veteranos en COGA',t:'9 am – 2 pm',p:'Central Oregon Gymnastics Academy',u:'coga-veterans-day.html'},
+ {d:'2026-11-12',cat:'arts',e:'🌷',en:'Flowers for Your Teacher',es:'Flores para su maestra',t:'1 – 3 pm',p:'Flowers by Eryn & Co.',u:'teacher-flowers.html'},
+ {d:['2026-11-13','2026-11-15'],cat:'arts',e:'🎭',en:'The Tempest at BEAT (3rd–5th)',es:'La tempestad en BEAT (3.º a 5.º)',t:'Pick a show',tes:'Elija una función',p:'Open Space Event Studios',u:'tempest.html'},
+ {d:'2026-11-14',cat:'family',e:'⛽',en:'Fill Your Bellies and Your Tanks',es:'Llene la barriga y el tanque',t:'4 – 7 pm',p:'Bend',u:'fill-your-tank.html'},
+ {d:'2026-11-18',cat:'arts',e:'🩰',en:'Nutcracker at the Tower Theatre',es:'El Cascanueces en el Tower Theatre',t:'7 pm',p:'Tower Theatre',u:'nutcracker.html'},
+ {d:'2026-11-20',cat:'play',e:'🤸',en:'Kids Night Out',es:'Noche de niños',t:'6 – 9 pm',p:'Mountain Air Trampoline Park',u:'kids-night-out.html'},
+ {d:'2026-11-22',cat:'horses',e:'🐴',en:'Horse Camp at M&B Farms (3rd–5th)',es:'Campamento de caballos en M&B Farms (3.º a 5.º)',t:'10 am – 2 pm',p:'M&B Farms, 25070 Swalley Rd',u:'horse-camp.html'},
+ {d:'2026-11-23',cat:'learn',e:'🤖',en:'LEGO Robotics Day Camp (K–5)',es:'Campamento de robótica LEGO (K a 5.º)',t:'9:30 am – 2:30 pm',p:'Sylvan Learning, NW Crossing',u:'lego-camp.html'},
+ {d:'2026-11-23',cat:'family',e:'🎬',en:'Pajama Movie Night',es:'Noche de cine en pijama',t:'5 – 8 pm',p:'Ballers & Brews, 20869 Redside Ct',u:'movie-night.html'},
+ {d:'2026-11-26',cat:'family',e:'🦃',en:'Thanksgiving help for families',es:'Ayuda para el Día de Acción de Gracias',t:'Ask us before the holiday',tes:'Pídala antes del feriado',p:'Private request',pes:'Solicitud privada',u:'thanksgiving-help.html'},
+ {d:'2026-11-27',cat:'horses',e:'🐴',en:'Horse Camp at M&B Farms (3rd–5th)',es:'Campamento de caballos en M&B Farms (3.º a 5.º)',t:'10 am – 2 pm',p:'M&B Farms, 25070 Swalley Rd',u:'horse-camp.html'},
+ {d:'2026-11-28',cat:'learn',e:'📚',en:'Snowy Day Reading Camp (K–2)',es:'Campamento de lectura Snowy Day (K a 2.º)',t:'9 am – 1 pm',p:'Elevate Reading Center',u:'reading-camp.html'}
+];
+// Healing Reins weekly groups
+var HR=[['2026-11-09','2026-11-16','2026-11-30','2026-12-07','2026-12-14','9–10:30 am & 1–2:30 pm'],
+ ['2026-11-10','2026-11-17','2026-12-01','2026-12-08','2026-12-15','9–10:30 am & 11 am–12:30 pm'],
+ ['2026-11-11','2026-11-18','2026-12-02','2026-12-09','2026-12-16','9:30–11 am & 11:30 am–1 pm'],
+ ['2026-11-12','2026-11-19','2026-12-03','2026-12-10','2026-12-17','9–10:30 am & 12:30–2 pm'],
+ ['2026-11-13','2026-11-20','2026-12-04','2026-12-11','2026-12-18','2:30–4 pm'],
+ ['2026-11-14','2026-12-05','3–4:30 pm']];
+HR.forEach(function(r){var t=r[r.length-1];r.slice(0,-1).forEach(function(d){EV.push({d:d,cat:'horses',e:'🐴',en:'Horse groups at Healing Reins',es:'Grupos con caballos en Healing Reins',t:t,p:'Healing Reins, Tumalo',u:'healing-reins.html'});});});
+var ANY=[
+ {cat:'learn',e:'🎓',en:'Free tutoring assessment',es:'Evaluación de tutoría gratis',den:'Tutoring Club, Mathnasium or Sylvan. We handle scheduling.',des:'Tutoring Club, Mathnasium o Sylvan. Nosotros hacemos la cita.',u:'academic-needs.html'},
+ {cat:'learn',e:'📚',en:'Snowy Day Book Boxes',es:'Cajas de libros Snowy Day',den:'A literacy box for every Silver Rail student before winter break.',des:'Una caja de libros para cada estudiante antes de las vacaciones.',u:'book-boxes.html'},
+ {cat:'horses',e:'🐴',en:'Riding lessons at M&B Farms',es:'Clases de equitación en M&B Farms',den:'Four free private lessons for 3rd to 5th graders.',des:'Cuatro clases privadas gratis para 3.º a 5.º grado.',u:'riding-lessons.html'},
+ {cat:'care',e:'🤝',en:'Help for your family',es:'Ayuda para su familia',den:'Groceries, gas, bills and more. Private, no paperwork.',des:'Comida, gasolina, cuentas y más. Privado, sin papeleo.',u:'family-assistance.html'}
+];
+var T={
+ en:{eyebrow:'Events calendar · free for Silver Rail families',h1:"What's happening for our kids.",lede:"Every fund event in one place. Tap a day to see what's on, then tap an event to sign up. Every event is free for Silver Rail kids, staff, and their children and grandchildren.",month:'Month',list:'List',anytime:'Anytime, no date needed',all:'All',details:'Details and sign-up',passed:'Passed',none:'Nothing on this day. Pick another day or switch to List.',noneList:'No events this month for the types you picked.',more:'more',lang:'Ver en español',months:['January','February','March','April','May','June','July','August','September','October','November','December'],dow:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],loc:'en-US'},
+ es:{eyebrow:'Calendario de eventos · gratis para familias de Silver Rail',h1:'Lo que pasa para nuestros niños.',lede:'Todos los eventos del fondo en un solo lugar. Toque un día para ver lo que hay y luego toque un evento para inscribirse. Todo es gratis para los niños y el personal de Silver Rail, y sus hijos y nietos.',month:'Mes',list:'Lista',anytime:'En cualquier momento, sin fecha',all:'Todos',details:'Detalles e inscripción',passed:'Ya pasó',none:'No hay nada este día. Elija otro día o cambie a Lista.',noneList:'No hay eventos este mes para los tipos que eligió.',more:'más',lang:'View in English',months:['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'],dow:['dom','lun','mar','mié','jue','vie','sáb'],loc:'es-US'}
+};
+var lang=(navigator.language||'en').slice(0,2)==='es'?'es':'en';
+try{var sv=localStorage.getItem('srcf-lang');if(sv)lang=sv;}catch(e){}
+function pad(n){return n<10?'0'+n:''+n}
+function key(dt){return dt.getFullYear()+'-'+pad(dt.getMonth()+1)+'-'+pad(dt.getDate())}
+function parse(s){var a=s.split('-');return new Date(+a[0],+a[1]-1,+a[2])}
+var today=new Date();today.setHours(0,0,0,0);var TK=key(today);
+// expand into map
+var byDay={};
+EV.forEach(function(ev,i){ev.id=i;var a=Array.isArray(ev.d)?ev.d:[ev.d,ev.d];var s=parse(a[0]),e=parse(a[1]);for(var x=new Date(s);x<=e;x.setDate(x.getDate()+1)){var k=key(x);(byDay[k]=byDay[k]||[]).push(ev);}});
+var on={};Object.keys(CATS).forEach(function(c){on[c]=true});
+var first=parse('2026-10-01'),last=parse('2026-12-01');
+var cur=new Date(today.getFullYear(),today.getMonth(),1);if(cur<first)cur=new Date(first);if(cur>last)cur=new Date(last);
+var sel=null,view='month';
+function $(id){return document.getElementById(id)}
+function evs(k){return (byDay[k]||[]).filter(function(e){return on[e.cat]})}
+function nm(e){return lang==='es'?e.es:e.en}
+function tm(e){return lang==='es'&&e.tes?e.tes:e.t}
+function pl(e){return lang==='es'&&e.pes?e.pes:e.p}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+function fmtDay(k){return parse(k).toLocaleDateString(T[lang].loc,{weekday:'long',month:'long',day:'numeric'})}
+function card(e,past){var c=CATS[e.cat];return '<a class="card'+(past?' past':'')+'" href="'+e.u+'" style="border-left-color:'+c.c+';text-decoration:none;color:inherit"><span class="big" style="background:'+c.bg+'" aria-hidden="true">'+e.e+'</span><span><h4>'+esc(nm(e))+(past?'<span class="tag" style="background:var(--paper-2);color:var(--ink-2)">'+T[lang].passed+'</span>':'')+'</h4><p class="meta">'+esc(tm(e))+' · '+esc(pl(e))+'</p><span class="go" style="color:'+c.c+'">'+T[lang].details+' &rarr;</span></span></a>'}
+function chips(){var h='';Object.keys(CATS).forEach(function(c){var o=CATS[c];h+='<button type="button" class="chip" aria-pressed="'+on[c]+'" data-c="'+c+'"><span class="dot" style="background:'+o.c+'"></span>'+o[lang]+'</button>'});$('chips').innerHTML=h;
+ Array.prototype.forEach.call($('chips').children,function(b){b.onclick=function(){var c=b.getAttribute('data-c');var allOn=Object.keys(on).every(function(k){return on[k]});if(allOn){Object.keys(on).forEach(function(k){on[k]=k===c})}else{on[c]=!on[c];if(!Object.keys(on).some(function(k){return on[k]}))Object.keys(on).forEach(function(k){on[k]=true})}render()}})}
+function render(){
+ var L=T[lang];document.documentElement.lang=lang;
+ document.querySelectorAll('[data-i18n]').forEach(function(n){n.textContent=L[n.getAttribute('data-i18n')]});
+ $('langBtn').textContent=L.lang;chips();
+ $('monthTitle').textContent=L.months[cur.getMonth()]+' '+cur.getFullYear();
+ $('prev').disabled=cur<=first;$('next').disabled=cur>=last;
+ $('dow').innerHTML=L.dow.map(function(d){return '<div>'+d+'</div>'}).join('');
+ $('vMonth').className=view==='month'?'on':'';$('vList').className=view==='list'?'on':'';
+ $('monthView').hidden=view!=='month';$('listView').hidden=view!=='list';
+ var y=cur.getFullYear(),m=cur.getMonth(),start=new Date(y,m,1).getDay(),n=new Date(y,m+1,0).getDate();
+ var g='';for(var i=0;i<start;i++)g+='<div class="day blank"></div>';
+ var firstWith=null;
+ for(var d=1;d<=n;d++){var dt=new Date(y,m,d),k=key(dt),list=evs(k);if(list.length&&!firstWith&&k>=TK)firstWith=k;
+  var cls='day'+(k===TK?' today':'')+(k<TK?' past':'')+(k===sel?' sel':'');
+  var inner='<span class="n">'+d+'</span><span class="evs">';
+  list.slice(0,3).forEach(function(e){var c=CATS[e.cat];inner+='<span class="ev" style="background:'+c.bg+'"><span class="ic" aria-hidden="true">'+e.e+'</span><span class="t">'+esc(nm(e))+'</span></span>'});
+  inner+='</span>';if(list.length>3)inner+='<span class="more">+'+(list.length-3)+' '+L.more+'</span>';
+  var label=fmtDay(k)+(list.length?': '+list.map(nm).join(', '):'');
+  g+='<button type="button" class="'+cls+'" data-k="'+k+'" aria-label="'+esc(label)+'">'+inner+'</button>'}
+ $('grid').innerHTML=g;
+ Array.prototype.forEach.call($('grid').querySelectorAll('button.day'),function(b){b.onclick=function(){sel=b.getAttribute('data-k');render();$('detail').scrollIntoView({behavior:'smooth',block:'nearest'})}});
+ // detail
+ if(view==='month'){
+  var k2=sel&&sel.slice(0,7)===key(cur).slice(0,7)?sel:null;
+  if(!k2){k2=(TK.slice(0,7)===key(cur).slice(0,7)&&evs(TK).length)?TK:firstWith}
+  if(k2){var l2=evs(k2);$('detail').innerHTML='<h3>'+fmtDay(k2)+'</h3>'+(l2.length?l2.map(function(e){return card(e,k2<TK)}).join(''):'<p class="empty">'+L.none+'</p>')}
+  else $('detail').innerHTML='';
+ } else $('detail').innerHTML='';
+ // list
+ var lh='',hidePast=TK.slice(0,7)===key(cur).slice(0,7);for(var d2=1;d2<=n;d2++){var k3=key(new Date(y,m,d2)),l3=evs(k3);if(!l3.length||(hidePast&&k3<TK))continue;lh+='<div class="lday">'+fmtDay(k3)+'</div>'+l3.map(function(e){return card(e,k3<TK)}).join('')}
+ $('listView').innerHTML=lh||'<p class="empty">'+L.noneList+'</p>';
+ $('anytime').innerHTML=ANY.map(function(a){var c=CATS[a.cat];return '<a class="card" href="'+a.u+'" style="border-left-color:'+c.c+';text-decoration:none;color:inherit"><span class="big" style="background:'+c.bg+'" aria-hidden="true">'+a.e+'</span><span><h4>'+esc(lang==='es'?a.es:a.en)+'</h4><p>'+esc(lang==='es'?a.des:a.den)+'</p><span class="go" style="color:'+c.c+'">'+L.details+' &rarr;</span></span></a>'}).join('');
+}
+$('prev').onclick=function(){cur=new Date(cur.getFullYear(),cur.getMonth()-1,1);sel=null;render()};
+$('next').onclick=function(){cur=new Date(cur.getFullYear(),cur.getMonth()+1,1);sel=null;render()};
+$('vMonth').onclick=function(){view='month';render()};
+$('vList').onclick=function(){view='list';render()};
+$('langBtn').onclick=function(){lang=lang==='es'?'en':'es';try{localStorage.setItem('srcf-lang',lang)}catch(e){}render()};
+render();
+})();
+</script>
+
+<footer class="sf">
+  <div class="wrap sf-top">
+    <div class="sf-about">
+      <a class="sf-brand" href="/"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#5B3F93"/><path d="M50 78 C30 62 20 52 20 40 a15 15 0 0 1 30 -6 a15 15 0 0 1 30 6 c0 12 -10 22 -30 38z" fill="#f3c77b"/></svg>Silver Rail Children's Fund</a>
+      <p>A nonprofit started and run by Silver Rail Elementary parents. 100% of what comes in goes to the children who were at Silver Rail on October 15 — for what they need now, when it matters most, and, as funds allow, for years to come. The support follows the child, wherever they go to school next.</p>
+      <ul class="sf-trust">
+        <li>Parent-led, all volunteer</li>
+        <li>100% to the kids</li>
+        <li>Every dollar posted monthly</li>
+        <li>Eligible until age 25</li>
+        <li>Fiscally sponsored by VictimsFirst, a 501(c)(3)</li>
+      </ul>
+      <a class="btn" href="https://givebutter.com/c/support-lifelong-healing-for-silver-rail-kids-vhn38h" target="_blank" rel="noopener">Give to the Kids Fun Fund</a>
+    </div>
+    <div class="sf-cols">
+      <div>
+        <strong>Give</strong>
+        <a href="https://givebutter.com/c/support-lifelong-healing-for-silver-rail-kids-vhn38h" target="_blank" rel="noopener">Kids Fun Fund on Givebutter</a>
+        <a href="/#give-by-check">Give by check (tax-deductible)</a>
+        <a href="/#sponsor">Sponsor a Silver Rail kid</a>
+        <a href="/#businesses">For businesses</a>
+        <a href="book-boxes.html">Snowy Day Book Boxes</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="heal-through-service.html">Heal Through Service</a>
+        <a href="community-events.html">Community events</a>
+        <a href="past-events.html">Past events</a>
+      </div>
+      <div>
+        <strong>For families</strong>
+        <a href="parents.html">Register your child</a>
+        <a href="nutcracker.html">Nutcracker at the Tower (Nov 18)</a>
+        <a href="healing-reins.html">Horsemanship at Healing Reins (through Dec 18)</a>
+        <a href="kids-night-out.html">Kids Night Out (Nov 20)</a>
+        <a href="lego-camp.html">LEGO robotics camp (Nov 23)</a>
+        <a href="movie-night.html">Pajama movie night (Nov 23)</a>
+        <a href="horse-camp.html">Horse camp at M&amp;B Farms (Nov 22 &amp; 27)</a>
+        <a href="reading-camp.html">Snowy Day Reading Camp (Nov 28)</a>
+        <a href="riding-lessons.html">Riding lessons at M&amp;B Farms</a>
+        <a href="mathnasium.html">Free math assessment (Mathnasium)</a>
+        <a href="tutoring-club.html">Free tutoring assessment (Tutoring Club)</a>
+        <a href="past-events.html">Past events</a>
+        <a href="parenting-after-october-15.html">Parenting after October 15</a>
+        <a href="academic-needs.html">Help kids catch up (tutoring)</a>
+        <a href="family-assistance.html">Emergency assistance</a>
+        <a href="thanksgiving-help.html">Thanksgiving help</a>
+        <a href="holiday-help.html">Holiday help</a>
+        <a href="home-help.html">Help around the house</a>
+        <a href="teachers-staff.html">Support for teachers &amp; staff</a>
+        <a href="why-play-works.html">What the research says</a>
+        <a href="blog.html">From the fund (blog)</a>
+        <a href="dads-group.html">Silver Rail Dads Group</a>
+        <a href="oregon-crime-victims-compensation.html">Crime Victims' Compensation guide</a>
+        <a href="letters-to-the-governor.html">Letter to Governor Kotek</a>
+        <a href="kaylub.html">Messages for Kaylub</a>
+      </div>
+      <div>
+        <strong>About</strong>
+        <a href="/#how">How it works</a>
+        <a href="why-we-pay-providers.html">Why we never hand a family cash</a>
+        <a href="board.html">Board of Directors</a>
+        <a href="bylaws.html">Bylaws</a>
+        <a href="/#transparency">Transparency &amp; records</a>
+        <a href="/#news">In the news</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+      <div>
+        <strong>Press &amp; partners</strong>
+        <a href="https://www.kptv.com/2026/10/27/parent-led-nonprofit-launches-fund-support-children-affected-by-silver-rail-tragedy/" target="_blank" rel="noopener">In the news: KPTV, Oct 26</a>
+        <a href="https://www.centraloregondaily.com/news/silver_rail/silver-rail-parents-launch-fundraiser-for-kids-after-bend-school-shooting/article_2acdb4eb-1e67-42cd-9d37-42c930561763.html" target="_blank" rel="noopener">In the news: Central Oregon Daily, Oct 26</a>
+        <a href="https://ktvz.com/central-oregon-strong/2026/10/25/silver-rail-parents-launch-nonprofit-offering-support-for-students-who-survived-tragedy/" target="_blank" rel="noopener">In the news: KTVZ, Oct 25</a>
+        <a href="/#contact">Media inquiries</a>
+        <a href="/#contact">Foundations &amp; partnerships</a>
+        <a href="mailto:hello@silverrailchildrensfund.org">hello@silverrailchildrensfund.org</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap sf-legal">
+    <p><strong>Silver Rail Children's Fund</strong> · Bend, Oregon · <a href="mailto:hello@silverrailchildrensfund.org">hello@silverrailchildrensfund.org</a></p>
+    <p>Oregon public benefit nonprofit corporation, incorporated October 23, 2026 · Oregon Registry No. 264524597 · <strong>Tax ID 43-2607169</strong></p>
+    <p><strong>Fiscal sponsor.</strong> The Silver Rail Children's Fund is fiscally sponsored by VictimsFirst, Inc., a 501(c)(3) public charity (EIN 32-0656956). Gifts made to VictimsFirst for the Silver Rail Children's Fund are tax-deductible to the extent allowed by law, and VictimsFirst sends the tax receipt. 100% is passed through to the fund, with no administrative fee. <a href="/#give-by-check">How to give by check</a>.</p>
+    <p>Our own application for recognition of exemption under Section 501(c)(3) is in progress; if granted, exemption is retroactive to our incorporation date. You can also give on our <a href="https://givebutter.com/c/support-lifelong-healing-for-silver-rail-kids-vhn38h" target="_blank" rel="noopener">Givebutter</a>. We provide a receipt to every donor.</p>
+    <p>© 2026 Silver Rail Children's Fund · <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a> · <a href="accessibility.html">Accessibility</a></p>
+  </div>
+</footer>
+
+
+<script>document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>document.querySelector("header").classList.remove("open")));</script>
+<script src="/assets/newsletter.js" defer></script>
+</body>
+</html>
